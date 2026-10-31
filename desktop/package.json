@@ -1,0 +1,32 @@
+{
+  "name": "moki-pet",
+  "productName": "Moki",
+  "version": "0.1.0",
+  "description": "Moki, la mascota pixel art de JorgeSuarez.com.mx para tu escritorio (macOS, Windows y Linux). Reacciona a Claude Code.",
+  "main": "main.js",
+  "author": "Jorge Suárez · JorgeSuarez.com.mx <jorgefsb@gmail.com>",
+  "homepage": "https://moki.jorgesuarez.com.mx/pixel/",
+  "license": "MIT",
+  "scripts": {
+    "prepare-assets": "node scripts/prepare.mjs",
+    "start": "npm run prepare-assets && electron .",
+    "dist": "npm run prepare-assets && electron-builder --publish never",
+    "dist:mac": "npm run prepare-assets && electron-builder --mac --publish never",
+    "dist:win": "npm run prepare-assets && electron-builder --win --publish never",
+    "dist:linux": "npm run prepare-assets && electron-builder --linux --publish never"
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "mx.jorgesuarez.moki",
+    "productName": "Moki",
+    "directories": { "output": "release", "buildResources": "build" },
+    "files": ["main.js", "preload.js", "hooks.js", "renderer/**", "app/**", "package.json"],
+    "mac": { "category": "public.app-category.entertainment", "target": [{ "target": "dmg", "arch": ["arm64", "x64"] }], "icon": "build/icon.png", "extendInfo": { "LSUIElement": true } },
+    "win": { "target": ["nsis", "portable"], "icon": "build/icon.png" },
+    "nsis": { "oneClick": true, "perMachine": false },
+    "linux": { "target": ["AppImage", "deb", "pacman"], "category": "Game", "icon": "build/icon.png", "maintainer": "JorgeSuarez.com.mx", "synopsis": "Moki, mascota pixel art de escritorio" }
+  }
+}

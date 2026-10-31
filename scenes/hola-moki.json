@@ -1,0 +1,17 @@
+{
+  "title": "Hola, soy Moki",
+  "format": "16:9",
+  "background": "noche",
+  "duration": 9,
+  "start": { "x": -20, "facing": "right", "clip": "walk" },
+  "timeline": [
+    { "at": 0, "walk_to": 70 },
+    { "at": 0.2, "caption": "Hola, soy Moki", "for": 2.6 },
+    { "at": 2.8, "facing": "front", "play": "wave" },
+    { "at": 3.0, "say": "¡Hola!", "for": 1.6 },
+    { "at": 4.7, "facing": "right", "play": "think" },
+    { "at": 6.2, "play": "idea" },
+    { "at": 7.2, "play": "celebrate" },
+    { "at": 7.4, "caption": "Jugar. Crear. Volver a intentar.", "pos": "bottom", "for": 1.6 }
+  ]
+}

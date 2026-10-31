@@ -1,0 +1,10 @@
+node_modules/
+scratch/
+site-build/
+desktop/node_modules/
+desktop/app/
+desktop/release/
+dist/moki-pixel-kit.zip
+.DS_Store
+*.log
+.wrangler/

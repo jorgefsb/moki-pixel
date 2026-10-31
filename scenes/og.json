@@ -1,0 +1,10 @@
+{
+  "title": "Imagen social de Moki Pixel",
+  "width": 200, "height": 105, "scale": 6,
+  "background": "noche", "ground": 92, "duration": 3, "seed": 5,
+  "start": { "x": 150, "facing": "front", "clip": "wave" },
+  "timeline": [
+    { "at": 0, "caption": "Moki Pixel", "pos": "top", "for": 5 },
+    { "at": 1.2, "say": "¡Hola!", "for": 3 }
+  ]
+}

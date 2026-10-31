@@ -1,0 +1,141 @@
+{
+ "frameSize": {
+  "w": 38,
+  "h": 40
+ },
+ "anchor": "esquina inferior izquierda = punta de la cola; colócala en head_top + (3, 2)",
+ "emotes": {
+  "bang": {
+   "row": 0,
+   "frames": 4,
+   "label": "¡! sorpresa / alerta",
+   "durations": [
+    60,
+    60,
+    900,
+    300
+   ]
+  },
+  "question": {
+   "row": 1,
+   "frames": 4,
+   "label": "? duda / curiosidad",
+   "durations": [
+    60,
+    60,
+    900,
+    300
+   ]
+  },
+  "dots": {
+   "row": 2,
+   "frames": 4,
+   "label": "… pensando",
+   "durations": [
+    60,
+    60,
+    900,
+    300
+   ]
+  },
+  "idea": {
+   "row": 3,
+   "frames": 4,
+   "label": "foco / idea",
+   "durations": [
+    60,
+    60,
+    900,
+    300
+   ]
+  },
+  "star": {
+   "row": 4,
+   "frames": 4,
+   "label": "estrella / logro",
+   "durations": [
+    60,
+    60,
+    900,
+    300
+   ]
+  },
+  "heart": {
+   "row": 5,
+   "frames": 4,
+   "label": "corazón / gracias",
+   "durations": [
+    60,
+    60,
+    900,
+    300
+   ]
+  },
+  "zz": {
+   "row": 6,
+   "frames": 4,
+   "label": "Zz dormido",
+   "durations": [
+    60,
+    60,
+    900,
+    300
+   ]
+  },
+  "scribble": {
+   "row": 7,
+   "frames": 4,
+   "label": "garabato / frustración",
+   "durations": [
+    60,
+    60,
+    900,
+    300
+   ]
+  },
+  "music": {
+   "row": 8,
+   "frames": 4,
+   "label": "nota / música",
+   "durations": [
+    60,
+    60,
+    900,
+    300
+   ]
+  },
+  "check": {
+   "row": 9,
+   "frames": 4,
+   "label": "palomita / listo",
+   "durations": [
+    60,
+    60,
+    900,
+    300
+   ]
+  },
+  "gear": {
+   "row": 10,
+   "frames": 4,
+   "label": "engrane / construyendo",
+   "durations": [
+    60,
+    60,
+    900,
+    300
+   ]
+  },
+  "ay": {
+   "row": 11,
+   "frames": 4,
+   "label": "«¡Ay!» (Moki escondido)",
+   "durations": [
+    60,
+    60,
+    900,
+    300
+   ]
+  }
+ }
+}

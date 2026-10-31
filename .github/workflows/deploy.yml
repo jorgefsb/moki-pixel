@@ -1,0 +1,28 @@
+name: Deploy moki.jorgesuarez.com.mx/pixel
+on:
+  push: { branches: [main], paths: ['site/**', 'dist/**', 'deploy/**', 'tools/site.mjs'] }
+  workflow_dispatch:
+concurrency: { group: deploy, cancel-in-progress: false }
+jobs:
+  deploy:
+    if: github.repository == 'jorgefsb/moki-pixel'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: sudo apt-get update && sudo apt-get install -y ffmpeg zip
+      - run: npm ci
+      - run: node tools/site.mjs
+      - name: Publicar Worker moki-pixel (ruta /pixel*, no toca Moki Studio)
+        working-directory: deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx --yes wrangler@4 deploy
+      - name: Verificar en vivo
+        run: |
+          sleep 10
+          curl -sf -o /dev/null -w "%{http_code}\n" https://moki.jorgesuarez.com.mx/pixel/
+          curl -sf -o /dev/null -w "%{http_code}\n" https://moki.jorgesuarez.com.mx/pixel/dist/manifest.json
+          curl -sf -o /dev/null -w "%{http_code}\n" https://moki.jorgesuarez.com.mx/

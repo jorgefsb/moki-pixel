@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="es" data-juice="poquito">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moki Pixel · el kit de animación pixel art de Moki</title>
+<meta name="description" content="Moki en pixel art: 43 animaciones, 4 vistas, 3 tamaños, emotes, wallpapers, videos programáticos y mascota de escritorio. Código abierto. Hecho con amor por JorgeSuarez.com.mx.">
+<meta name="theme-color" content="#0A0A0A">
+<meta property="og:title" content="Moki Pixel">
+<meta property="og:description" content="El kit de animación pixel art de Moki: juegos, páginas, apps, wallpapers y videos.">
+<meta property="og:image" content="https://moki.jorgesuarez.com.mx/pixel/og.png">
+<meta property="og:url" content="https://moki.jorgesuarez.com.mx/pixel/">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="preload" href="fonts/Outfit-Bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<a class="skip" href="#contenido" data-i18n="skip">Saltar al contenido</a>
+<header class="top">
+  <a class="brand" href="./" aria-label="Moki Pixel, inicio"><img src="favicon.png" alt="" width="28" height="28"> <b>Moki</b> Pixel</a>
+  <nav aria-label="Secciones">
+    <a href="#galeria" data-i18n="nav.gallery">Animaciones</a>
+    <a href="#usalo" data-i18n="nav.use">Úsalo</a>
+    <a href="#descargas" data-i18n="nav.dl">Descargas</a>
+    <a href="https://github.com/jorgefsb/moki-pixel">GitHub</a>
+  </nav>
+  <div class="tools">
+    <label class="juice"><span data-i18n="juice">Juega</span>
+      <select id="juice" aria-label="Nivel de juego">
+        <option value="nada" data-i18n="j.nada">Nada</option>
+        <option value="poquito" selected data-i18n="j.poco">Poquito</option>
+        <option value="mucho" data-i18n="j.mucho">Mucho</option>
+        <option value="hardcore">Hardcore</option>
+      </select>
+    </label>
+    <button id="lang" class="chip" aria-label="Cambiar idioma">EN</button>
+  </div>
+</header>
+
+<main id="contenido">
+<section class="hero">
+  <div class="hero-copy">
+    <p class="kicker" data-i18n="kicker">Kit de animación · pixel art · código abierto</p>
+    <h1 data-i18n="h1">Moki, en pixel art, listo para jugar.</h1>
+    <p class="lead" data-i18n="lead">43 animaciones con los 12 principios de la animación, 4 vistas, 3 tamaños, emotes, wallpapers, videos programáticos con Claude y una mascota que vive en tu escritorio o en tu página.</p>
+    <div class="ctas">
+      <a class="btn primary" href="#descargas" data-i18n="cta.dl">Descargar el kit</a>
+      <a class="btn" href="https://github.com/jorgefsb/moki-pixel" data-i18n="cta.gh">Ver el repo</a>
+      <a class="btn ghost" href="#usalo" data-i18n="cta.use">Ponlo en tu página</a>
+    </div>
+  </div>
+  <div class="hero-stage" aria-hidden="true">
+    <moki-sprite id="heroMoki" clip="wave" facing="front" size="128" scale="3" label="Moki saludando"></moki-sprite>
+  </div>
+</section>
+
+<section class="why paper">
+  <h2 data-i18n="why.h">Por qué existe</h2>
+  <p data-i18n="why.p1">Moki es el alter ego explorador de Jorge Suárez: descubre, se equivoca y construye mundos mientras aprende. Este kit lo convierte en un personaje que cualquiera puede usar para explorar y jugar con IA y videojuegos: en un juego, una página, una app, un wallpaper o un video.</p>
+  <p data-i18n="why.p2">Lo hicimos abierto porque así se aprende mejor: probar pequeño, compartir, volver a intentar. El código es MIT; el arte de Moki va con licencia CC BY-NC 4.0 (da crédito, sin uso comercial).</p>
+  <p class="sig" data-i18n="sig">Hecho con amor ❤️🎮 por JorgeSuarez.com.mx</p>
+</section>
+
+<section id="galeria" class="gallery">
+  <div class="sec-head">
+    <h2 data-i18n="gal.h">Animaciones</h2>
+    <div class="controls" role="group" aria-label="Opciones de vista">
+      <label><span data-i18n="gal.view">Vista</span>
+        <select id="facing"><option value="right" data-i18n="f.r">Derecha</option><option value="left" data-i18n="f.l">Izquierda</option><option value="front" data-i18n="f.f">Frente</option><option value="back" data-i18n="f.b">Espalda</option></select>
+      </label>
+      <label><span data-i18n="gal.size">Tamaño</span>
+        <select id="size"><option>32</option><option selected>64</option><option>128</option></select>
+      </label>
+    </div>
+  </div>
+  <p class="hint" data-i18n="gal.hint">Cada vista sale de la geometría de Moki: nunca se espeja, por eso el parche MOKI siempre queda en su oreja derecha.</p>
+  <div id="grid" class="grid"></div>
+</section>
+
+<section class="emotes">
+  <h2 data-i18n="em.h">Expresiones sin rostro</h2>
+  <p data-i18n="em.p">El visor de Moki no tiene ojos ni boca. Expresa con postura, gesto y ritmo, y con burbujas de papel sobre el casco.</p>
+  <div id="emoteGrid" class="emote-grid"></div>
+</section>
+
+<section class="principles paper">
+  <h2 data-i18n="pr.h">Los 12 principios de la animación, aplicados</h2>
+  <div id="prGrid" class="pr-grid"></div>
+</section>
+
+<section id="usalo" class="use">
+  <h2 data-i18n="use.h">Úsalo</h2>
+  <div class="tabs" role="tablist">
+    <button role="tab" aria-selected="true" data-tab="web">Web</button>
+    <button role="tab" data-tab="comp">Web component</button>
+    <button role="tab" data-tab="phaser">Phaser</button>
+    <button role="tab" data-tab="godot">Godot</button>
+    <button role="tab" data-tab="unity">Unity</button>
+    <button role="tab" data-tab="gm">GameMaker</button>
+    <button role="tab" data-tab="video">Video con Claude</button>
+    <button role="tab" data-tab="desk">Escritorio</button>
+  </div>
+  <div class="panels">
+<pre data-panel="web"><code>&lt;!-- Moki camina por tu página. Nivel: nada · poquito · mucho · hardcore --&gt;
+&lt;script src="https://moki.jorgesuarez.com.mx/pixel/dist/runtime/moki-pet.js"
+        data-juice="poquito" data-hello="¡Hola!"&gt;&lt;/script&gt;
+&lt;script&gt;
+  // API: MokiPixel.pet.say('Texto'), .act('celebrate'), .walkTo(400), .emote('idea'), .hide()
+&lt;/script&gt;</code></pre>
+<pre data-panel="comp" hidden><code>&lt;script type="module"&gt;
+  import 'https://moki.jorgesuarez.com.mx/pixel/dist/runtime/moki.mjs';
+&lt;/script&gt;
+&lt;moki-sprite clip="play" facing="right" size="64" scale="3"&gt;&lt;/moki-sprite&gt;
+&lt;moki-sprite clip="think" facing="front" emote="dots"&gt;&lt;/moki-sprite&gt;</code></pre>
+<pre data-panel="phaser" hidden><code>// preload
+this.load.aseprite('moki', 'moki-64-right.png', 'moki-64-right.json');
+// create
+this.anims.createFromAseprite('moki');
+const moki = this.add.sprite(160, 120, 'moki').play({ key: 'walk', repeat: -1 });
+// Vista izquierda = carga moki-64-left (nunca setFlipX: el parche cambiaría de oreja)</code></pre>
+<pre data-panel="godot" hidden><code># Copia dist/sprites/64/*.png a res://moki/ y dist/engines/godot/*.tres a tu proyecto
+var frames = preload("res://moki/moki-64-right.tres")
+$AnimatedSprite2D.sprite_frames = frames
+$AnimatedSprite2D.play("walk")
+# Filtro: Project Settings → Rendering → Textures → Default Texture Filter = Nearest</code></pre>
+<pre data-panel="unity" hidden><code>// 1) Importa moki-64-right.png: Texture Type = Sprite, Filter = Point, Compression = None
+// 2) Sprite Mode = Multiple → Sprite Editor → Slice → Grid By Cell Size 64×64
+// 3) Copia dist/engines/unity/MokiAtlasImporter.cs a Assets/Editor/
+//    Menú Moki → Crear clips desde JSON (usa duraciones y loops del atlas)</code></pre>
+<pre data-panel="gm" hidden><code>// Arrastra dist/strips/64/right/moki_walk_right_strip12.png al IDE:
+// GameMaker detecta «_strip12» y lo corta en 12 subimágenes.
+sprite_index = spr_moki_walk_right;
+image_speed = 1; // 12 fps en la configuración del sprite</code></pre>
+<pre data-panel="video" hidden><code>{ "format": "9:16", "background": "noche", "duration": 8,
+  "timeline": [
+    { "at": 0,   "walk_to": 90 },
+    { "at": 2.5, "facing": "front", "play": "wave", "say": "¡Hola!" },
+    { "at": 4,   "play": "idea", "emote": "idea" },
+    { "at": 5.5, "play": "celebrate", "caption": "Prueba pequeño. Aprende rápido." } ] }
+# node tools/scene.mjs mi-escena.json --out moki.mp4
+# Claude puede escribir el guion: carga la skill claude/skills/moki-pixel</code></pre>
+<pre data-panel="desk" hidden><code># macOS · Windows · Linux (incluye Omarchy / Hyprland)
+# Descarga el instalador en GitHub Releases o corre desde el código:
+git clone https://github.com/jorgefsb/moki-pixel && cd moki-pixel/desktop
+npm install && npm start
+# Conéctalo a Claude Code: los hooks mandan eventos a http://127.0.0.1:47820
+# (ver desktop/README.md)</code></pre>
+  </div>
+</section>
+
+<section id="descargas" class="dl paper">
+  <h2 data-i18n="dl.h">Descargas</h2>
+  <div class="dl-grid">
+    <a class="dl-card" href="dist/moki-pixel-kit.zip" download><b data-i18n="dl.kit">Kit completo (ZIP)</b><span data-i18n="dl.kit.s">Atlas, tiras, Godot, FX, GIFs, guías</span></a>
+    <a class="dl-card" href="dist/moki-hoja-de-personaje.png"><b data-i18n="dl.sheet">Hoja de personaje</b><span>PNG 2400×3360</span></a>
+    <a class="dl-card" href="#wallpapers"><b>Wallpapers</b><span data-i18n="dl.wp.s">Escritorio, 4K, ultrawide y celular</span></a>
+    <a class="dl-card" href="https://github.com/jorgefsb/moki-pixel/releases"><b data-i18n="dl.desk">Mascota de escritorio</b><span>macOS · Windows · Linux</span></a>
+  </div>
+  <h3 id="wallpapers">Wallpapers</h3>
+  <div id="wpGrid" class="wp-grid"></div>
+</section>
+</main>
+
+<footer class="foot">
+  <p data-i18n="foot.sig">Hecho con amor ❤️🎮 por <a href="https://jorgesuarez.com.mx">JorgeSuarez.com.mx</a> para explorar y jugar con IA y videojuegos.</p>
+  <p><a href="https://moki.jorgesuarez.com.mx/" data-i18n="foot.studio">← Moki Studio</a> · <a href="https://github.com/jorgefsb/moki-pixel">github.com/jorgefsb/moki-pixel</a> · <span data-i18n="foot.lic">Código MIT · Arte CC BY-NC 4.0</span> · <span id="ver"></span></p>
+  <p class="small" data-i18n="foot.status">Estado: propuesta pixel art basada en el diseño de Moki aprobado el 12-oct-2026. Pendiente de aprobación.</p>
+</footer>
+
+<script type="module" src="site.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+{
+  "name": "moki-pixel",
+  "version": "0.1.0",
+  "type": "module",
+  "private": false,
+  "description": "Moki en pixel art: kit abierto de animación (43 clips, 4 vistas, 3 tamaños), exportes para juegos, runtime web, mascota de escritorio, wallpapers y videos programáticos. Hecho con amor por JorgeSuarez.com.mx.",
+  "homepage": "https://moki.jorgesuarez.com.mx/pixel/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jorgefsb/moki-pixel.git"
+  },
+  "author": "Jorge Suárez · JorgeSuarez.com.mx",
+  "license": "MIT AND CC-BY-NC-4.0",
+  "keywords": [
+    "moki",
+    "pixel-art",
+    "sprite",
+    "animation",
+    "desktop-pet",
+    "game-assets",
+    "phaser",
+    "godot",
+    "claude",
+    "claude-code"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "moki-scene": "tools/scene.mjs",
+    "moki-build": "tools/build.mjs"
+  },
+  "scripts": {
+    "build": "node tools/build.mjs && node tools/bundle.mjs && node tools/charsheet.mjs && node tools/wallpapers.mjs && node tools/docs.mjs && node tools/engines.mjs",
+    "build:fast": "node tools/build.mjs --sizes 64 --facings right,front && node tools/bundle.mjs",
+    "scene": "node tools/scene.mjs",
+    "site": "node tools/site.mjs",
+    "test": "node tools/test.mjs"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "^1.1.0",
+    "gifenc": "^1.0.3"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  }
+}

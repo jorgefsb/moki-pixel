@@ -1,0 +1,1196 @@
+{
+ "name": "Moki Pixel",
+ "version": "0.1.0",
+ "generated": "2026-10-31T01:03:52.474Z",
+ "status": "propuesto (adaptación pixel art del diseño aprobado el 12-oct-2026; pendiente de aprobación de Jorge)",
+ "fps": 12,
+ "sizes": [
+  {
+   "size": 128,
+   "unitsPerPx": 10,
+   "groundY": 122
+  },
+  {
+   "size": 64,
+   "unitsPerPx": 20,
+   "groundY": 61
+  },
+  {
+   "size": 32,
+   "unitsPerPx": 40,
+   "groundY": 30
+  }
+ ],
+ "facings": {
+  "right": {
+   "yaw": 50
+  },
+  "left": {
+   "yaw": -50
+  },
+  "front": {
+   "yaw": 0
+  },
+  "back": {
+   "yaw": 180
+  }
+ },
+ "groups": {
+  "locomocion": "Locomoción",
+  "salto": "Salto",
+  "gestos": "Gestos",
+  "emociones": "Emociones",
+  "actividades": "Actividades",
+  "descanso": "Descanso",
+  "mascota": "Mascota"
+ },
+ "clips": {
+  "idle": {
+   "group": "locomocion",
+   "duration": 2.4,
+   "loop": true,
+   "facings": [
+    "right",
+    "left",
+    "front",
+    "back"
+   ],
+   "note": "Respiración sutil sin flotar (canon idle 2-4 s).",
+   "principles": [
+    "slow-in-out",
+    "secundaria",
+    "timing",
+    "appeal"
+   ],
+   "events": [],
+   "emote": null,
+   "speed_u_per_s": 0
+  },
+  "idle_look": {
+   "group": "locomocion",
+   "duration": 3.6,
+   "loop": true,
+   "facings": [
+    "right",
+    "left",
+    "front"
+   ],
+   "note": "Mira a los lados con pausas: curiosidad sin rostro.",
+   "principles": [
+    "anticipacion",
+    "slow-in-out",
+    "timing"
+   ],
+   "events": [],
+   "emote": null,
+   "speed_u_per_s": 0
+  },
+  "walk": {
+   "group": "locomocion",
+   "duration": 1,
+   "loop": true,
+   "facings": [
+    "right",
+    "left",
+    "front",
+    "back"
+   ],
+   "note": "Ciclo de 1 s (canon). Contacto bajo, paso alto; brazos opuestos a piernas.",
+   "principles": [
+    "arcos",
+    "timing",
+    "secundaria",
+    "squash"
+   ],
+   "events": [
+    {
+     "t": 0.25,
+     "name": "step"
+    },
+    {
+     "t": 0.75,
+     "name": "step"
+    }
+   ],
+   "emote": null,
+   "speed_u_per_s": 380
+  },
+  "run": {
+   "group": "locomocion",
+   "duration": 0.6,
+   "loop": true,
+   "facings": [
+    "right",
+    "left",
+    "front",
+    "back"
+   ],
+   "note": "Ciclo 0.6 s (canon 0.5-0.7). Empuje y vuelo claros; torso adelantado.",
+   "principles": [
+    "arcos",
+    "exageracion",
+    "squash",
+    "secundaria"
+   ],
+   "events": [
+    {
+     "t": 0.15,
+     "name": "step"
+    },
+    {
+     "t": 0.45,
+     "name": "step"
+    }
+   ],
+   "emote": null,
+   "speed_u_per_s": 900
+  },
+  "jump": {
+   "group": "salto",
+   "duration": 1.15,
+   "loop": false,
+   "facings": [
+    "right",
+    "left",
+    "front"
+   ],
+   "note": "Anticipación → despegue → ápice → caída → aterrizaje (canon P10).",
+   "principles": [
+    "anticipacion",
+    "squash",
+    "arcos",
+    "slow-in-out",
+    "follow-through"
+   ],
+   "events": [
+    {
+     "t": 0.24,
+     "name": "takeoff"
+    },
+    {
+     "t": 0.86,
+     "name": "land"
+    }
+   ],
+   "emote": null,
+   "speed_u_per_s": 0
+  },
+  "jump_rise": {
+   "group": "salto",
+   "duration": 0.4,
+   "loop": true,
+   "facings": [
+    "right",
+    "left",
+    "front"
+   ],
+   "note": "Pose sostenida de subida para motores de plataformas.",
+   "principles": [
+    "staging"
+   ],
+   "events": [],
+   "emote": null,
+   "speed_u_per_s": 0
+  },
+  "jump_fall": {
+   "group": "salto",
+   "duration": 0.4,
+   "loop": true,
+   "facings": [
+    "right",
+    "left",
+    "front"
+   ],
+   "note": "Caída: piernas buscando el suelo, brazos abiertos para equilibrio.",
+   "principles": [
+    "secundaria",
+    "staging"
+   ],
+   "events": [],
+   "emote": null,
+   "speed_u_per_s": 0
+  },
+  "land": {
+   "group": "salto",
+   "duration": 0.45,
+   "loop": false,
+   "facings": [
+    "right",
+    "left",
+    "front"
+   ],
+   "note": "Aterrizaje: absorbe con rodillas, rebota y regresa al control.",
+   "principles": [
+    "squash",
+    "follow-through",
+    "slow-in-out"
+   ],
+   "events": [
+    {
+     "t": 0,
+     "name": "land"
+    }
+   ],
+   "emote": null,
+   "speed_u_per_s": 0
+  },
+  "wave": {
+   "group": "gestos",
+   "duration": 1.7,
+   "loop": false,
+   "facings": [
+    "right",
+    "left",
+    "front"
+   ],
+   "note": "Saludo con mano derecha (referencia S07): anticipa, sube en «L» fuera del casco, tres vaivenes, sostiene, baja.",
+   "principles": [
+    "anticipacion",
+    "arcos",
+    "follow-through",
+    "timing",
+    "staging",
+    "pose-a-pose"
+   ],
+   "events": [],
+   "emote": null,
+   "speed_u_per_s": 0
+  },
+  "point": {
+   "group": "gestos",
+   "duration": 1.5,
+   "loop": false,
+   "facings": [
+    "right",
+    "left",
+    "front"
+   ],
+   "note": "Señala hacia donde mira. Peso adelante y sostén claro (0.25-0.5 s).",
+   "principles": [
+    "anticipacion",
+    "staging",
+    "slow-in-out",
+    "pose-a-pose"
+   ],
+   "events": [],
+   "emote": null,
+   "speed_u_per_s": 0
+  },
+  "think": {
+   "group": "gestos",
+   "duration": 2.8,
+   "loop": true,
+   "facings": [
+    "right",
+    "left",
+    "front"
+   ],
+   "note": "Mano al borde del visor, casco ladeado hacia arriba. Emote de puntos suspensivos.",
+   "principles": [
+    "staging",
+    "timing",
+    "secundaria"
+   ],
+   "events": [],
+   "emote": {
+    "name": "dots",
+    "t": 0.6
+   },
+   "speed_u_per_s": 0
+  },
+  "idea": {
+   "group": "gestos",
+   "duration": 1.3,
+   "loop": false,
+   "facings": [
+    "right",
+    "left",
+    "front"
+   ],
+   "note": "¡Ya caí! Salto corto, brazo arriba. Emote foco.",
+   "principles": [
+    "anticipacion",
+    "exageracion",
+    "squash"
+   ],
+   "events": [],
+   "emote": {
+    "name": "idea",
+    "t": 0.25
+   },
+   "speed_u_per_s": 0
+  },
+  "talk": {
+   "group": "gestos",
+   "duration": 1.6,
+   "loop": true,
+   "facings": [
+    "right",
+    "left",
+    "front"
+   ],
+   "note": "Gesticula mientras habla (para burbujas de texto). El visor no se mueve: habla el cuerpo.",
+   "principles": [
+    "secundaria",
+    "arcos",
+    "timing"
+   ],
+   "events": [],
+   "emote": null,
+   "speed_u_per_s": 0
+  },
+  "nod": {
+   "group": "gestos",
+   "duration": 0.9,
+   "loop": false,
+   "facings": [
+    "right",
+    "left",
+    "front"
+   ],
+   "note": "Sí / decisión: peso adelante y dos asentimientos.",
+   "principles": [
+    "anticipacion",
+    "timing"
+   ],
+   "events": [],
+   "emote": null,
+   "speed_u_per_s": 0
+  },
+  "shake_no": {
+   "group": "gestos",
+   "duration": 1,
+   "loop": false,
+   "facings": [
+    "right",
+    "left",
+    "front"
+   ],
+   "note": "No / error: niega con el casco, manos abiertas.",
+   "principles": [
+    "timing",
+    "exageracion"
+   ],
+   "events": [],
+   "emote": {
+    "name": "bang",
+    "t": 0.05
+   },
+   "speed_u_per_s": 0
+  },
+  "curious": {
+   "group": "emociones",
+   "duration": 1.8,
+   "loop": false,
+   "facings": [
+    "right",
+    "left",
+    "front"
+   ],
+   "note": "Curiosidad: casco ladeado 8-12°, se acerca y explora con la mano (canon).",
+   "principles": [
+    "staging",
+    "anticipacion",
+    "slow-in-out"
+   ],
+   "events": [],
+   "emote": {
+    "name": "question",
+    "t": 0.4
+   },
+   "speed_u_per_s": 0
+  },
+  "decision": {
+   "group": "emociones",
+   "duration": 1.2,
+   "loop": false,
+   "facings": [
+    "right",
+    "left",
+    "front"
+   ],
+   "note": "Decisión: peso adelante y dirección clara (canon).",
+   "principles": [
+    "anticipacion",
+    "staging"
+   ],
+   "events": [],
+   "emote": null,
+   "speed_u_per_s": 0
+  },
+  "doubt": {
+   "group": "emociones",
+   "duration": 1.6,
+   "loop": false,
+   "facings": [
+    "right",
+    "left",
+    "front"
+   ],
+   "note": "Duda: pausa, retrocede un poco y abre las manos (canon).",
+   "principles": [
+    "timing",
+    "staging"
+   ],
+   "events": [],
+   "emote": {
+    "name": "question",
+    "t": 0.3
+   },
+   "speed_u_per_s": 0
+  },
+  "celebrate": {
+   "group": "emociones",
+   "duration": 1.6,
+   "loop": false,
+   "facings": [
+    "right",
+    "left",
+    "front"
+   ],
+   "note": "Logro: torso abierto, brazos arriba; el peso regresa al centro (canon).",
+   "principles": [
+    "anticipacion",
+    "squash",
+    "exageracion",
+    "arcos",
+    "follow-through",
+    "appeal"
+   ],
+   "events": [
+    {
+     "t": 0.3,
+     "name": "takeoff"
+    },
+    {
+     "t": 0.78,
+     "name": "land"
+    }
+   ],
+   "emote": {
+    "name": "star",
+    "t": 0.35
+   },
+   "speed_u_per_s": 0
+  },
+  "frustrated": {
+   "group": "emociones",
+   "duration": 2.2,
+   "loop": false,
+   "facings": [
+    "right",
+    "left",
+    "front"
+   ],
+   "note": "Frustración: ritmo lento y eje bajo; sin lágrimas pintadas (canon). Regresa al control.",
+   "principles": [
+    "timing",
+    "staging",
+    "slow-in-out"
+   ],
+   "events": [],
+   "emote": {
+    "name": "scribble",
+    "t": 0.5
+   },
+   "speed_u_per_s": 0
+  },
+  "scared": {
+   "group": "emociones",
+   "duration": 1,
+   "loop": false,
+   "facings": [
+    "right",
+    "left",
+    "front"
+   ],
+   "note": "Susto: brinco atrás y brazos de defensa, luego se recompone.",
+   "principles": [
+    "anticipacion",
+    "exageracion",
+    "timing"
+   ],
+   "events": [],
+   "emote": {
+    "name": "bang",
+    "t": 0
+   },
+   "speed_u_per_s": 0
+  },
+  "ay": {
+   "group": "emociones",
+   "duration": 1.5,
+   "loop": false,
+   "facings": [
+    "right",
+    "left",
+    "front"
+   ],
+   "note": "«¡Ay!» del Moki escondido (juice 1.2.0): brinca, se voltea, mueve las pompis y regresa.",
+   "principles": [
+    "anticipacion",
+    "exageracion",
+    "arcos",
+    "secundaria"
+   ],
+   "events": [],
+   "emote": {
+    "name": "ay",
+    "t": 0.05
+   },
+   "speed_u_per_s": 0
+  },
+  "hit": {
+   "group": "emociones",
+   "duration": 0.6,
+   "loop": false,
+   "facings": [
+    "right",
+    "left",
+    "front"
+   ],
+   "note": "Golpe recibido: respuesta corta y legible, recuperación rápida (canon hit_react).",
+   "principles": [
+    "timing",
+    "follow-through"
+   ],
+   "events": [],
+   "emote": null,
+   "speed_u_per_s": 0
+  },
+  "typing": {
+   "group": "actividades",
+   "duration": 0.8,
+   "loop": true,
+   "facings": [
+    "right",
+    "left",
+    "front"
+   ],
+   "note": "Sentado con laptop de cartón: escribe código (como Clawd, pero con Moki).",
+   "principles": [
+    "secundaria",
+    "timing"
+   ],
+   "events": [],
+   "emote": null,
+   "speed_u_per_s": 0
+  },
+  "building": {
+   "group": "actividades",
+   "duration": 1,
+   "loop": true,
+   "facings": [
+    "right",
+    "left",
+    "front"
+   ],
+   "note": "Construye con martillo: anticipación lenta, golpe rápido, impacto sostenido.",
+   "principles": [
+    "anticipacion",
+    "timing",
+    "arcos",
+    "exageracion"
+   ],
+   "events": [
+    {
+     "t": 0.48,
+     "name": "hit"
+    }
+   ],
+   "emote": null,
+   "speed_u_per_s": 0
+  },
+  "juggling": {
+   "group": "actividades",
+   "duration": 1.2,
+   "loop": true,
+   "facings": [
+    "right",
+    "left",
+    "front"
+   ],
+   "note": "Malabares en cascada con 3 bolas: arcos parabólicos y manos que acompañan.",
+   "principles": [
+    "arcos",
+    "timing",
+    "secundaria"
+   ],
+   "events": [],
+   "emote": null,
+   "speed_u_per_s": 0
+  },
+  "play": {
+   "group": "actividades",
+   "duration": 1.2,
+   "loop": true,
+   "facings": [
+    "right",
+    "left",
+    "front"
+   ],
+   "note": "Juega con control genérico (distinto del emblema del pecho, canon C04).",
+   "principles": [
+    "secundaria",
+    "timing"
+   ],
+   "events": [],
+   "emote": null,
+   "speed_u_per_s": 0
+  },
+  "push": {
+   "group": "actividades",
+   "duration": 1,
+   "loop": true,
+   "facings": [
+    "right",
+    "left"
+   ],
+   "note": "Empuja un bloque: inclinación fuerte y pasos cortos con peso creíble (canon push).",
+   "principles": [
+    "staging",
+    "timing"
+   ],
+   "events": [],
+   "emote": null,
+   "speed_u_per_s": 140
+  },
+  "carry": {
+   "group": "actividades",
+   "duration": 1,
+   "loop": true,
+   "facings": [
+    "right",
+    "left",
+    "front"
+   ],
+   "note": "Carga un bloque sobre la cabeza mientras camina (canon carry).",
+   "principles": [
+    "squash",
+    "timing",
+    "secundaria"
+   ],
+   "events": [],
+   "emote": null,
+   "speed_u_per_s": 300
+  },
+  "pickup": {
+   "group": "actividades",
+   "duration": 1.3,
+   "loop": false,
+   "facings": [
+    "right",
+    "left",
+    "front"
+   ],
+   "note": "Agarrar/usar: se agacha, toma y revisa el objeto (canon grab_use).",
+   "principles": [
+    "anticipacion",
+    "slow-in-out",
+    "staging"
+   ],
+   "events": [],
+   "emote": null,
+   "speed_u_per_s": 0
+  },
+  "dance": {
+   "group": "actividades",
+   "duration": 2,
+   "loop": true,
+   "facings": [
+    "right",
+    "left",
+    "front"
+   ],
+   "note": "Baile de fiesta (cuando encuentras los 5 Mokis): pasos laterales y brazos alternos.",
+   "principles": [
+    "timing",
+    "exageracion",
+    "secundaria",
+    "arcos",
+    "appeal"
+   ],
+   "events": [],
+   "emote": null,
+   "speed_u_per_s": 0
+  },
+  "ready": {
+   "group": "actividades",
+   "duration": 0.8,
+   "loop": true,
+   "facings": [
+    "right",
+    "left"
+   ],
+   "note": "Guardia de reto de juego: contextual, nunca agresión permanente (canon combat).",
+   "principles": [
+    "anticipacion",
+    "timing"
+   ],
+   "events": [],
+   "emote": null,
+   "speed_u_per_s": 0
+  },
+  "attack": {
+   "group": "actividades",
+   "duration": 0.6,
+   "loop": false,
+   "facings": [
+    "right",
+    "left"
+   ],
+   "note": "Golpe de juego: anticipación, golpe de 2 cuadros, recuperación.",
+   "principles": [
+    "anticipacion",
+    "timing",
+    "follow-through",
+    "exageracion"
+   ],
+   "events": [
+    {
+     "t": 0.2,
+     "name": "hit"
+    }
+   ],
+   "emote": null,
+   "speed_u_per_s": 0
+  },
+  "sit": {
+   "group": "descanso",
+   "duration": 2.8,
+   "loop": true,
+   "facings": [
+    "right",
+    "left",
+    "front"
+   ],
+   "note": "Sentado tranquilo.",
+   "principles": [
+    "slow-in-out"
+   ],
+   "events": [],
+   "emote": null,
+   "speed_u_per_s": 0
+  },
+  "sleep": {
+   "group": "descanso",
+   "duration": 3.2,
+   "loop": true,
+   "facings": [
+    "right",
+    "left",
+    "front"
+   ],
+   "note": "Duerme sentado: respiración lenta y profunda. Emote Zz.",
+   "principles": [
+    "timing",
+    "slow-in-out",
+    "secundaria"
+   ],
+   "events": [],
+   "emote": {
+    "name": "zz",
+    "t": 0,
+    "every": 1.6
+   },
+   "speed_u_per_s": 0
+  },
+  "wake": {
+   "group": "descanso",
+   "duration": 1.8,
+   "loop": false,
+   "facings": [
+    "right",
+    "left",
+    "front"
+   ],
+   "note": "Despierta y se estira.",
+   "principles": [
+    "anticipacion",
+    "exageracion",
+    "slow-in-out"
+   ],
+   "events": [],
+   "emote": null,
+   "speed_u_per_s": 0
+  },
+  "sit_down": {
+   "group": "descanso",
+   "duration": 0.8,
+   "loop": false,
+   "facings": [
+    "right",
+    "left",
+    "front"
+   ],
+   "note": "Transición de pie → sentado.",
+   "principles": [
+    "slow-in-out",
+    "squash"
+   ],
+   "events": [],
+   "emote": null,
+   "speed_u_per_s": 0
+  },
+  "stand_up": {
+   "group": "descanso",
+   "duration": 0.8,
+   "loop": false,
+   "facings": [
+    "right",
+    "left",
+    "front"
+   ],
+   "note": "Transición de sentado → de pie.",
+   "principles": [
+    "anticipacion",
+    "slow-in-out"
+   ],
+   "events": [],
+   "emote": null,
+   "speed_u_per_s": 0
+  },
+  "dragged": {
+   "group": "mascota",
+   "duration": 1,
+   "loop": true,
+   "facings": [
+    "front",
+    "right",
+    "left"
+   ],
+   "note": "Cuando lo agarras con el mouse: cuelga de la mochila y patalea con péndulo.",
+   "principles": [
+    "secundaria",
+    "arcos",
+    "follow-through",
+    "pose-a-pose"
+   ],
+   "events": [],
+   "emote": null,
+   "speed_u_per_s": 0
+  },
+  "falling": {
+   "group": "mascota",
+   "duration": 0.5,
+   "loop": true,
+   "facings": [
+    "front",
+    "right",
+    "left"
+   ],
+   "note": "Cayendo después de soltarlo: agita brazos y piernas.",
+   "principles": [
+    "exageracion",
+    "secundaria"
+   ],
+   "events": [],
+   "emote": {
+    "name": "bang",
+    "t": 0
+   },
+   "speed_u_per_s": 0
+  },
+  "hang": {
+   "group": "mascota",
+   "duration": 2.4,
+   "loop": true,
+   "facings": [
+    "front",
+    "right",
+    "left"
+   ],
+   "note": "Cuelga de un hilo (Moki escondido): se columpia con física de péndulo.",
+   "principles": [
+    "arcos",
+    "secundaria",
+    "slow-in-out"
+   ],
+   "events": [],
+   "emote": null,
+   "speed_u_per_s": 0
+  },
+  "peek": {
+   "group": "mascota",
+   "duration": 2,
+   "loop": true,
+   "facings": [
+    "front",
+    "right",
+    "left"
+   ],
+   "note": "Se asoma por un borde (el runtime recorta a Moki). Casco curioso.",
+   "principles": [
+    "staging",
+    "timing"
+   ],
+   "events": [],
+   "emote": null,
+   "speed_u_per_s": 0
+  },
+  "turn": {
+   "group": "mascota",
+   "duration": 1.6,
+   "loop": true,
+   "facings": [
+    "front"
+   ],
+   "note": "Vuelta completa de 360° (muestra de volumen sólido; transición).",
+   "principles": [
+    "dibujo-solido"
+   ],
+   "events": [],
+   "emote": null,
+   "speed_u_per_s": 0
+  }
+ },
+ "emotes": {
+  "bang": "¡! sorpresa / alerta",
+  "question": "? duda / curiosidad",
+  "dots": "… pensando",
+  "idea": "foco / idea",
+  "star": "estrella / logro",
+  "heart": "corazón / gracias",
+  "zz": "Zz dormido",
+  "scribble": "garabato / frustración",
+  "music": "nota / música",
+  "check": "palomita / listo",
+  "gear": "engrane / construyendo",
+  "ay": "«¡Ay!» (Moki escondido)"
+ },
+ "palette": {
+  "base": {
+   "orange": "#FF6B35",
+   "cream": "#F4E8D5",
+   "charcoal": "#22211F",
+   "petrol": "#4C6260",
+   "kraft": "#B99168",
+   "black": "#0A0A0A",
+   "surface": "#161616",
+   "amber": "#FFA500",
+   "white": "#FFFFFF"
+  },
+  "ramps": {
+   "orange": [
+    "#FF9A66",
+    "#FF6B35",
+    "#DE4F27",
+    "#A8381E"
+   ],
+   "cream": [
+    "#FFF7EA",
+    "#F4E8D5",
+    "#DCC6A6",
+    "#B99168"
+   ],
+   "label": [
+    "#FFFBF2",
+    "#FBF1E1",
+    "#E6D3B6",
+    "#B99168"
+   ],
+   "charcoal": [
+    "#4D4945",
+    "#34322F",
+    "#22211F",
+    "#171614"
+   ],
+   "visor": [
+    "#3E3B38",
+    "#2B2927",
+    "#1E1D1B",
+    "#141312"
+   ],
+   "visorHi": [
+    "#C9C0B3",
+    "#A79F94",
+    "#8C857B",
+    "#6E6861"
+   ],
+   "petrol": [
+    "#71898A",
+    "#4C6260",
+    "#3B4D4B",
+    "#2A3735"
+   ],
+   "kraft": [
+    "#D2AE86",
+    "#B99168",
+    "#97744F",
+    "#73573A"
+   ],
+   "ink": [
+    "#2C2A27",
+    "#22211F",
+    "#1A1917",
+    "#121110"
+   ],
+   "speck": [
+    "#FF8A50",
+    "#E8622F",
+    "#C24E25",
+    "#943A1B"
+   ],
+   "paper": [
+    "#FFFFFF",
+    "#F4E8D5",
+    "#DCC6A6",
+    "#B99168"
+   ],
+   "steel": [
+    "#B9B4AC",
+    "#8E8A84",
+    "#6B6863",
+    "#4C4A46"
+   ],
+   "wood": [
+    "#C79B6B",
+    "#A57A4E",
+    "#82603C",
+    "#5E452B"
+   ],
+   "amber": [
+    "#FFD27A",
+    "#FFA500",
+    "#D98500",
+    "#A86600"
+   ],
+   "screen": [
+    "#2E4A48",
+    "#1F3533",
+    "#162624",
+    "#0E1918"
+   ],
+   "screenOn": [
+    "#9FE0C8",
+    "#6CC2A6",
+    "#4C9C84",
+    "#2F6E5C"
+   ]
+  },
+  "outline": "#191613"
+ },
+ "atlases": [
+  {
+   "size": 32,
+   "facing": "back",
+   "frames": 42,
+   "clips": 3,
+   "atlas": [
+    1344,
+    32
+   ]
+  },
+  {
+   "size": 32,
+   "facing": "front",
+   "frames": 650,
+   "clips": 40,
+   "atlas": [
+    4096,
+    192
+   ]
+  },
+  {
+   "size": 32,
+   "facing": "left",
+   "frames": 677,
+   "clips": 42,
+   "atlas": [
+    4096,
+    192
+   ]
+  },
+  {
+   "size": 32,
+   "facing": "right",
+   "frames": 672,
+   "clips": 42,
+   "atlas": [
+    4096,
+    192
+   ]
+  },
+  {
+   "size": 64,
+   "facing": "back",
+   "frames": 47,
+   "clips": 3,
+   "atlas": [
+    3008,
+    64
+   ]
+  },
+  {
+   "size": 64,
+   "facing": "front",
+   "frames": 677,
+   "clips": 40,
+   "atlas": [
+    4096,
+    704
+   ]
+  },
+  {
+   "size": 64,
+   "facing": "left",
+   "frames": 692,
+   "clips": 42,
+   "atlas": [
+    4096,
+    704
+   ]
+  },
+  {
+   "size": 64,
+   "facing": "right",
+   "frames": 690,
+   "clips": 42,
+   "atlas": [
+    4096,
+    704
+   ]
+  },
+  {
+   "size": 128,
+   "facing": "back",
+   "frames": 48,
+   "clips": 3,
+   "atlas": [
+    4096,
+    256
+   ]
+  },
+  {
+   "size": 128,
+   "facing": "front",
+   "frames": 681,
+   "clips": 40,
+   "atlas": [
+    4096,
+    2816
+   ]
+  },
+  {
+   "size": 128,
+   "facing": "left",
+   "frames": 694,
+   "clips": 42,
+   "atlas": [
+    4096,
+    2816
+   ]
+  },
+  {
+   "size": 128,
+   "facing": "right",
+   "frames": 695,
+   "clips": 42,
+   "atlas": [
+    4096,
+    2816
+   ]
+  }
+ ],
+ "signature": "Hecho con amor ❤️🎮 por JorgeSuarez.com.mx para explorar y jugar con IA y videojuegos."
+}

@@ -1,0 +1,16 @@
+name: CI
+on:
+  push: { branches: [main] }
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - run: npm ci
+      - run: npm test
+      - run: node tools/build.mjs --sizes 64 --facings right --out /tmp/ci-dist
+      - run: node tools/scene.mjs scenes/hola-moki.json --out /tmp/hola.mp4 && ls -la /tmp/hola.mp4

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><title>Moki · ejemplo Phaser 3</title>
+<style>html,body{margin:0;background:#0A0A0A}canvas{image-rendering:pixelated}</style>
+<script src="https://cdn.jsdelivr.net/npm/phaser@3.80.1/dist/phaser.min.js"></script></head>
+<body>
+<script>
+// Ejemplo mínimo de plataformas. Flechas: caminar · Shift: correr · Espacio: saltar · W: saludar.
+// Vista izquierda = atlas propio (nunca setFlipX). Cada vista vive en su sprite con animaciones locales.
+const BASE = 'https://moki.jorgesuarez.com.mx/pixel/dist/sprites/64/';
+new Phaser.Game({
+  type: Phaser.AUTO, width: 320, height: 180, zoom: 4, pixelArt: true, backgroundColor: '#0A0A0A',
+  physics: { default: 'arcade', arcade: { gravity: { y: 900 } } },
+  scene: {
+    preload() {
+      this.load.aseprite('mokiR', BASE + 'moki-64-right.png', BASE + 'moki-64-right.json');
+      this.load.aseprite('mokiL', BASE + 'moki-64-left.png', BASE + 'moki-64-left.json');
+    },
+    create() {
+      this.add.rectangle(160, 172, 320, 16, 0xB99168);
+      const ground = this.physics.add.staticImage(160, 172, null).setSize(320, 16).setVisible(false);
+      this.body = this.physics.add.image(80, 100, null).setSize(22, 48).setVisible(false);
+      this.physics.add.collider(this.body, ground);
+      this.views = {};
+      for (const k of ['mokiR', 'mokiL']) {
+        const s = this.add.sprite(0, 0, k, '0').setOrigin(0.5, 61 / 64);
+        s.anims.createFromAseprite(k); // animaciones locales del sprite: idle, walk, run, jump_rise...
+        this.views[k] = s;
+      }
+      this.side = 'mokiR';
+      this.keys = this.input.keyboard.addKeys('LEFT,RIGHT,SHIFT,SPACE,W');
+    },
+    update() {
+      const k = this.keys, b = this.body.body, onGround = b.blocked.down;
+      const speed = k.SHIFT.isDown ? 90 : 40;
+      if (k.LEFT.isDown) { b.setVelocityX(-speed); this.side = 'mokiL'; }
+      else if (k.RIGHT.isDown) { b.setVelocityX(speed); this.side = 'mokiR'; }
+      else b.setVelocityX(0);
+      if (Phaser.Input.Keyboard.JustDown(k.SPACE) && onGround) b.setVelocityY(-330);
+      let clip = 'idle';
+      if (!onGround) clip = b.velocity.y < 0 ? 'jump_rise' : 'jump_fall';
+      else if (b.velocity.x) clip = k.SHIFT.isDown ? 'run' : 'walk';
+      else if (k.W.isDown) clip = 'wave';
+      for (const [key, s] of Object.entries(this.views)) {
+        s.setVisible(key === this.side).setPosition(Math.round(this.body.x), Math.round(this.body.y + 24));
+        if (key === this.side && s.anims.currentAnim?.key !== clip) s.play({ key: clip, repeat: clip === 'wave' ? 0 : -1 });
+      }
+    },
+  },
+});
+</script>
+</body></html>

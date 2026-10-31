@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-12T02:37:00-06:00",
+  "timezone": "America/Mexico_City",
+  "scope": "Decisiones de Jorge posteriores al corte editorial del PDF 0.6 y la Biblia 0.1",
+  "moki": {
+    "status": "approved_design",
+    "approved": "Detalles propuestos del personaje, incluida la hoja 2D de cinco vistas y espalda.",
+    "limits": "La aprobación de diseño no implica entrega de malla 3D, rig o animaciones ni acredita pruebas técnicas de producción."
+  },
+  "audiences": [
+    {
+      "priority": 1,
+      "name": "Gamers",
+      "goal": "Consumir nuestros juegos y contenido."
+    },
+    {
+      "priority": 2,
+      "name": "Gamedevs",
+      "goal": "Consumir nuestros juegos, contenido y oferta de Arden.",
+      "arden": {
+        "UETC": "Cursos presenciales y virtuales.",
+        "Club": "Comunidad virtual y física para hacer juegos con otros gamedevs y embajadores.",
+        "Logrus": "Training center que hace juegos como servicio para marcas."
+      }
+    },
+    {
+      "priority": 3,
+      "name": "Emprendedores y empresarios",
+      "goal": "Consumir contenido, cursos y productos de la marca personal y sus empresas en Papacito OS."
+    }
+  ],
+  "remaining": [
+    "Validación de aplicaciones reales, accesibilidad y uso por canal.",
+    "Créditos y permisos por contexto, y selección de retratos neutrales."
+  ],
+  "public_editor": "Yoshi",
+  "environment": "entorno de nube",
+  "signature_and_templates": {
+    "approved_at": "2026-10-12T02:48:00-06:00",
+    "status": "approved_design",
+    "scope": "Firma A/B/C y estructuras de plantillas social 4:5, presentación 16:9 y vertical 9:16.",
+    "normalized_files_version": "1.0",
+    "verification": "Geometría preservada, mínimo digital 240 px y tres exportaciones revisadas; exportación de 50 mm a 300 ppp. Sin prueba física de impresión. Naranja/papel 2.34:1 reservado a la firma gráfica."
+  }
+}
