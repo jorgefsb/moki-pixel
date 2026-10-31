@@ -23,9 +23,7 @@ main > section { padding: clamp(40px, 6vw, 80px) clamp(16px, 5vw, 64px); max-wid
 .brand { display: flex; align-items: center; gap: 8px; text-decoration: none; font: 700 20px Outfit, sans-serif; }
 .brand img { image-rendering: pixelated; }
 .brand b { color: var(--orange); }
-.top nav { display: flex; gap: 18px; flex: 1; flex-wrap: wrap; }
-.top nav a { text-decoration: none; color: var(--muted); font-size: 15px; }
-.top nav a:hover { color: var(--paper); }
+.top .moki-menu { flex: 1; }
 .tools { display: flex; gap: 10px; align-items: center; }
 .juice { display: flex; gap: 6px; align-items: center; font: 700 14px Outfit, sans-serif; color: var(--orange); }
 select, .chip { background: var(--surface); color: var(--paper); border: 1px solid var(--border); border-radius: 10px; padding: 6px 10px; font: 400 14px Inter, sans-serif; min-height: 36px; }
@@ -98,5 +96,4 @@ pre { background: #121110; border: 1px solid #2a2724; border-radius: 14px; paddi
   .hero { grid-template-columns: 1fr; min-height: 0; }
   .hero-stage { min-height: 320px; }
   .hero-stage moki-sprite { transform: scale(.75); }
-  .top nav { order: 3; width: 100%; gap: 14px; }
 }

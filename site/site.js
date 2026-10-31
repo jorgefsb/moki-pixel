@@ -113,7 +113,7 @@ const EN = {
   'j.nada': 'None', 'j.poco': 'A little', 'j.mucho': 'A lot', kicker: 'Animation kit · pixel art · open source',
   h1: 'Moki, in pixel art, ready to play.',
   lead: '43 animations built on the 12 principles of animation, 4 views, 3 sizes, emotes, wallpapers, programmatic videos with Claude and a pet that lives on your desktop or your website.',
-  'cta.dl': 'Download the kit', 'cta.gh': 'See the repo', 'cta.use': 'Put it on your site',
+  'cta.dl': 'Download the kit', 'cta.gh': 'See the repo', 'cta.use': 'Put it on your site', 'cta.anim': 'See animations',
   'why.h': 'Why it exists',
   'why.p1': 'Moki is Jorge Suárez’s explorer alter ego: he discovers, makes mistakes and builds worlds while learning. This kit turns him into a character anyone can use to explore and play with AI and video games: in a game, a website, an app, a wallpaper or a video.',
   'why.p2': 'We made it open because that is how you learn best: test small, share, try again. Code is MIT; Moki’s art is CC BY-NC 4.0 (give credit, no commercial use).',
@@ -137,8 +137,8 @@ function setLang(l) {
     else el.innerHTML = ES[k];
   });
   $('#lang').textContent = l === 'en' ? 'ES' : 'EN';
-  localStorage.setItem('moki-lang', l);
+  try { localStorage.setItem('moki-language', l); } catch {}
   renderGrid();
 }
 $('#lang').addEventListener('click', () => setLang(document.documentElement.lang === 'en' ? 'es' : 'en'));
-if (localStorage.getItem('moki-lang') === 'en' || (!localStorage.getItem('moki-lang') && navigator.language?.startsWith('en'))) setLang('en');
+{ let saved = null; try { saved = localStorage.getItem('moki-language') || localStorage.getItem('moki-lang'); } catch {} if (saved === 'en') setLang('en'); }

@@ -13,17 +13,13 @@
 <link rel="icon" href="favicon.png" type="image/png">
 <link rel="preload" href="fonts/Outfit-Bold.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="/menu.css">
 </head>
 <body>
 <a class="skip" href="#contenido" data-i18n="skip">Saltar al contenido</a>
 <header class="top">
   <a class="brand" href="./" aria-label="Moki Pixel, inicio"><img src="favicon.png" alt="" width="28" height="28"> <b>Moki</b> Pixel</a>
-  <nav aria-label="Secciones">
-    <a href="#galeria" data-i18n="nav.gallery">Animaciones</a>
-    <a href="#usalo" data-i18n="nav.use">Úsalo</a>
-    <a href="#descargas" data-i18n="nav.dl">Descargas</a>
-    <a href="https://github.com/jorgefsb/moki-pixel">GitHub</a>
-  </nav>
+  <nav class="moki-menu" data-moki-menu aria-label="Menú de Moki"></nav>
   <div class="tools">
     <label class="juice"><span data-i18n="juice">Juega</span>
       <select id="juice" aria-label="Nivel de juego">
@@ -46,6 +42,7 @@
     <div class="ctas">
       <a class="btn primary" href="#descargas" data-i18n="cta.dl">Descargar el kit</a>
       <a class="btn" href="https://github.com/jorgefsb/moki-pixel" data-i18n="cta.gh">Ver el repo</a>
+      <a class="btn ghost" href="#galeria" data-i18n="cta.anim">Ver animaciones</a>
       <a class="btn ghost" href="#usalo" data-i18n="cta.use">Ponlo en tu página</a>
     </div>
   </div>
@@ -167,6 +164,7 @@ npm install && npm start
   <p class="small" data-i18n="foot.status">Estado: propuesta pixel art basada en el diseño de Moki aprobado el 12-oct-2026. Pendiente de aprobación.</p>
 </footer>
 
+<script defer src="/menu.js"></script>
 <script type="module" src="site.js"></script>
 </body>
 </html>
