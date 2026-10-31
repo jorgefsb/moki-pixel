@@ -1,8 +1,10 @@
 // Copia del kit lo que necesita la app (runtime + sprites 64/128 + FX) a desktop/app/
 import { cpSync, mkdirSync, rmSync, existsSync } from 'node:fs';
-const src = new URL('../../dist/', import.meta.url).pathname;
-const out = new URL('../app/dist/', import.meta.url).pathname;
-if (!existsSync(`${src}runtime/moki.mjs`)) {
+import { fileURLToPath } from 'node:url';
+import path from 'node:path';
+const src = fileURLToPath(new URL('../../dist/', import.meta.url));
+const out = fileURLToPath(new URL('../app/dist/', import.meta.url));
+if (!existsSync(path.join(src, 'runtime', 'moki.mjs'))) {
   console.error('Falta el kit. Desde la raíz del repo corre: npm install && npm run build');
   process.exit(1);
 }

@@ -2,11 +2,12 @@
 // sombra, emotes y burbujas de diálogo con tipografía de marca (texto nítido y separado, canon C07).
 import { createCanvas, loadImage, GlobalFonts } from '@napi-rs/canvas';
 import { readFileSync, existsSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
 import { emoteFrame, shadow, dustFrame, sparkFrame, confettiFrame } from '../../src/core/fx.js';
 import { RAMPS } from '../../src/core/palette.js';
 import { ImageData } from '@napi-rs/canvas';
 
-const ROOT = new URL('../../', import.meta.url).pathname;
+const ROOT = fileURLToPath(new URL('../../', import.meta.url));
 GlobalFonts.registerFromPath(`${ROOT}assets/fonts/Outfit-static.ttf`, 'Outfit');
 GlobalFonts.registerFromPath(`${ROOT}assets/fonts/Inter-static.ttf`, 'Inter');
 

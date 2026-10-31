@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 // Hoja de personaje pixel art de Moki (PNG). Uso: node tools/charsheet.mjs [salida.png]
 import { writeFileSync, mkdirSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
 import { createCanvas, ImageData, GlobalFonts } from '@napi-rs/canvas';
 import { renderPose, SIZES } from '../src/core/render.js';
 import { sampleClip } from '../src/anim/sample.js';
@@ -8,7 +9,7 @@ import { CLIPS, FACINGS } from '../src/anim/clips.js';
 import { RAMPS, OUTLINE } from '../src/core/palette.js';
 import { emoteFrame } from '../src/core/fx.js';
 
-const ROOT = new URL('../', import.meta.url).pathname;
+const ROOT = fileURLToPath(new URL('../', import.meta.url));
 GlobalFonts.registerFromPath(`${ROOT}assets/fonts/Outfit-static.ttf`, 'Outfit');
 GlobalFonts.registerFromPath(`${ROOT}assets/fonts/Inter-static.ttf`, 'Inter');
 const out = process.argv[2] || 'dist/moki-hoja-de-personaje.png';

@@ -1,7 +1,10 @@
 name: Desktop
 # Instaladores de la mascota de escritorio para macOS, Windows y Linux.
 on:
-  push: { tags: ['desktop-v*'] }
+  push:
+    tags: ['desktop-v*']
+    branches: [main]
+    paths: ['desktop/**', '.github/workflows/desktop.yml']
   workflow_dispatch:
 permissions: { contents: write }
 jobs:
