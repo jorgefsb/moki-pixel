@@ -3,6 +3,9 @@
   "main": "worker.js",
   "compatibility_date": "2026-10-01",
   "assets": { "directory": "../site-build", "binding": "ASSETS", "html_handling": "auto-trailing-slash" },
-  "routes": [{ "pattern": "moki.jorgesuarez.com.mx/pixel*", "zone_name": "jorgesuarez.com.mx" }],
+  "routes": [
+    { "pattern": "moki.jorgesuarez.com.mx/pixel", "zone_name": "jorgesuarez.com.mx" },
+    { "pattern": "moki.jorgesuarez.com.mx/pixel/*", "zone_name": "jorgesuarez.com.mx" }
+  ],
   "workers_dev": true
 }
