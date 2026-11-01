@@ -1,0 +1,51 @@
+{
+ "clip": "frustrated",
+ "facing": "right",
+ "fps": 12,
+ "loop": false,
+ "size": 512,
+ "frames": 27,
+ "sheet": {
+  "file": "frustrated-right-sheet.webp",
+  "cols": 8,
+  "rows": 4,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "frustrated-right.webm",
+  "mp4": "frustrated-right.mp4",
+  "gif": "frustrated-right.gif",
+  "poster": "frustrated-right-poster.png"
+ },
+ "air": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "events": []
+}

@@ -1,0 +1,37 @@
+{
+ "clip": "land",
+ "facing": "right",
+ "fps": 12,
+ "loop": false,
+ "size": 512,
+ "frames": 6,
+ "sheet": {
+  "file": "land-right-sheet.webp",
+  "cols": 6,
+  "rows": 1,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "land-right.webm",
+  "mp4": "land-right.mp4",
+  "gif": "land-right.gif",
+  "poster": "land-right-poster.png"
+ },
+ "air": [
+  0,
+  0,
+  2,
+  2,
+  0,
+  0
+ ],
+ "events": [
+  {
+   "frame": 0,
+   "names": [
+    "land"
+   ]
+  }
+ ]
+}

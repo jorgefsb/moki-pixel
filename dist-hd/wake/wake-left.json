@@ -1,0 +1,47 @@
+{
+ "clip": "wake",
+ "facing": "left",
+ "fps": 12,
+ "loop": false,
+ "size": 512,
+ "frames": 23,
+ "sheet": {
+  "file": "wake-left-sheet.webp",
+  "cols": 8,
+  "rows": 3,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "wake-left.webm",
+  "mp4": "wake-left.mp4",
+  "gif": "wake-left.gif",
+  "poster": "wake-left-poster.png"
+ },
+ "air": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "events": []
+}

@@ -1,0 +1,51 @@
+{
+ "clip": "frustrated",
+ "facing": "front",
+ "fps": 12,
+ "loop": false,
+ "size": 512,
+ "frames": 27,
+ "sheet": {
+  "file": "frustrated-front-sheet.webp",
+  "cols": 8,
+  "rows": 4,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "frustrated-front.webm",
+  "mp4": "frustrated-front.mp4",
+  "gif": "frustrated-front.gif",
+  "poster": "frustrated-front-poster.png"
+ },
+ "air": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "events": []
+}

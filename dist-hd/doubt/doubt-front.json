@@ -1,0 +1,44 @@
+{
+ "clip": "doubt",
+ "facing": "front",
+ "fps": 12,
+ "loop": false,
+ "size": 512,
+ "frames": 20,
+ "sheet": {
+  "file": "doubt-front-sheet.webp",
+  "cols": 8,
+  "rows": 3,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "doubt-front.webm",
+  "mp4": "doubt-front.mp4",
+  "gif": "doubt-front.gif",
+  "poster": "doubt-front-poster.png"
+ },
+ "air": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "events": []
+}

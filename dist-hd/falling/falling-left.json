@@ -1,0 +1,30 @@
+{
+ "clip": "falling",
+ "facing": "left",
+ "fps": 12,
+ "loop": true,
+ "size": 512,
+ "frames": 6,
+ "sheet": {
+  "file": "falling-left-sheet.webp",
+  "cols": 6,
+  "rows": 1,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "falling-left.webm",
+  "mp4": "falling-left.mp4",
+  "gif": "falling-left.gif",
+  "poster": "falling-left-poster.png"
+ },
+ "air": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "events": []
+}

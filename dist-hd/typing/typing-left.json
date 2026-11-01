@@ -1,0 +1,34 @@
+{
+ "clip": "typing",
+ "facing": "left",
+ "fps": 12,
+ "loop": true,
+ "size": 512,
+ "frames": 10,
+ "sheet": {
+  "file": "typing-left-sheet.webp",
+  "cols": 8,
+  "rows": 2,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "typing-left.webm",
+  "mp4": "typing-left.mp4",
+  "gif": "typing-left.gif",
+  "poster": "typing-left-poster.png"
+ },
+ "air": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "events": []
+}

@@ -1,0 +1,52 @@
+{
+ "clip": "jump",
+ "facing": "front",
+ "fps": 12,
+ "loop": false,
+ "size": 512,
+ "frames": 15,
+ "sheet": {
+  "file": "jump-front-sheet.webp",
+  "cols": 8,
+  "rows": 2,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "jump-front.webm",
+  "mp4": "jump-front.mp4",
+  "gif": "jump-front.gif",
+  "poster": "jump-front-poster.png"
+ },
+ "air": [
+  0,
+  0,
+  0,
+  36,
+  88,
+  146,
+  171,
+  176,
+  170,
+  119,
+  18,
+  0,
+  3,
+  0,
+  0
+ ],
+ "events": [
+  {
+   "frame": 2,
+   "names": [
+    "takeoff"
+   ]
+  },
+  {
+   "frame": 10,
+   "names": [
+    "land"
+   ]
+  }
+ ]
+}

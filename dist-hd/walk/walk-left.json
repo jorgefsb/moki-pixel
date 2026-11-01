@@ -1,0 +1,49 @@
+{
+ "clip": "walk",
+ "facing": "left",
+ "fps": 12,
+ "loop": true,
+ "size": 512,
+ "frames": 12,
+ "sheet": {
+  "file": "walk-left-sheet.webp",
+  "cols": 8,
+  "rows": 2,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "walk-left.webm",
+  "mp4": "walk-left.mp4",
+  "gif": "walk-left.gif",
+  "poster": "walk-left-poster.png"
+ },
+ "air": [
+  5,
+  2,
+  0,
+  0,
+  0,
+  2,
+  5,
+  2,
+  0,
+  0,
+  0,
+  2
+ ],
+ "events": [
+  {
+   "frame": 3,
+   "names": [
+    "step"
+   ]
+  },
+  {
+   "frame": 9,
+   "names": [
+    "step"
+   ]
+  }
+ ]
+}

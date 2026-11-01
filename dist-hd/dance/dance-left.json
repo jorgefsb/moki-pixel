@@ -1,0 +1,48 @@
+{
+ "clip": "dance",
+ "facing": "left",
+ "fps": 12,
+ "loop": true,
+ "size": 512,
+ "frames": 24,
+ "sheet": {
+  "file": "dance-left-sheet.webp",
+  "cols": 8,
+  "rows": 3,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "dance-left.webm",
+  "mp4": "dance-left.mp4",
+  "gif": "dance-left.gif",
+  "poster": "dance-left-poster.png"
+ },
+ "air": [
+  0,
+  4,
+  4,
+  0,
+  4,
+  4,
+  0,
+  4,
+  4,
+  0,
+  4,
+  4,
+  0,
+  4,
+  4,
+  0,
+  4,
+  4,
+  0,
+  4,
+  4,
+  0,
+  4,
+  4
+ ],
+ "events": []
+}

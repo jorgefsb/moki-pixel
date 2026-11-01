@@ -1,0 +1,38 @@
+{
+ "clip": "play",
+ "facing": "front",
+ "fps": 12,
+ "loop": true,
+ "size": 512,
+ "frames": 14,
+ "sheet": {
+  "file": "play-front-sheet.webp",
+  "cols": 8,
+  "rows": 2,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "play-front.webm",
+  "mp4": "play-front.mp4",
+  "gif": "play-front.gif",
+  "poster": "play-front-poster.png"
+ },
+ "air": [
+  0,
+  2,
+  2,
+  1,
+  0,
+  0,
+  0,
+  0,
+  2,
+  2,
+  2,
+  0,
+  0,
+  0
+ ],
+ "events": []
+}

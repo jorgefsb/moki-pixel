@@ -1,0 +1,35 @@
+{
+ "clip": "stand_up",
+ "facing": "front",
+ "fps": 12,
+ "loop": false,
+ "size": 512,
+ "frames": 11,
+ "sheet": {
+  "file": "stand_up-front-sheet.webp",
+  "cols": 8,
+  "rows": 2,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "stand_up-front.webm",
+  "mp4": "stand_up-front.mp4",
+  "gif": "stand_up-front.gif",
+  "poster": "stand_up-front-poster.png"
+ },
+ "air": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  3,
+  2,
+  0,
+  0,
+  0
+ ],
+ "events": []
+}

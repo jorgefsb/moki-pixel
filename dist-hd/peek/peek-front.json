@@ -1,0 +1,48 @@
+{
+ "clip": "peek",
+ "facing": "front",
+ "fps": 12,
+ "loop": true,
+ "size": 512,
+ "frames": 24,
+ "sheet": {
+  "file": "peek-front-sheet.webp",
+  "cols": 8,
+  "rows": 3,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "peek-front.webm",
+  "mp4": "peek-front.mp4",
+  "gif": "peek-front.gif",
+  "poster": "peek-front-poster.png"
+ },
+ "air": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "events": []
+}

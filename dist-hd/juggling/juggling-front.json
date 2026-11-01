@@ -1,0 +1,38 @@
+{
+ "clip": "juggling",
+ "facing": "front",
+ "fps": 12,
+ "loop": true,
+ "size": 512,
+ "frames": 14,
+ "sheet": {
+  "file": "juggling-front-sheet.webp",
+  "cols": 8,
+  "rows": 2,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "juggling-front.webm",
+  "mp4": "juggling-front.mp4",
+  "gif": "juggling-front.gif",
+  "poster": "juggling-front-poster.png"
+ },
+ "air": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "events": []
+}

@@ -1,0 +1,37 @@
+{
+ "clip": "scared",
+ "facing": "left",
+ "fps": 12,
+ "loop": false,
+ "size": 512,
+ "frames": 13,
+ "sheet": {
+  "file": "scared-left-sheet.webp",
+  "cols": 8,
+  "rows": 2,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "scared-left.webm",
+  "mp4": "scared-left.mp4",
+  "gif": "scared-left.gif",
+  "poster": "scared-left-poster.png"
+ },
+ "air": [
+  0,
+  36,
+  24,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  1,
+  0,
+  0,
+  0
+ ],
+ "events": []
+}

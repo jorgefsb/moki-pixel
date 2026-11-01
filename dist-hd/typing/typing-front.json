@@ -1,0 +1,34 @@
+{
+ "clip": "typing",
+ "facing": "front",
+ "fps": 12,
+ "loop": true,
+ "size": 512,
+ "frames": 10,
+ "sheet": {
+  "file": "typing-front-sheet.webp",
+  "cols": 8,
+  "rows": 2,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "typing-front.webm",
+  "mp4": "typing-front.mp4",
+  "gif": "typing-front.gif",
+  "poster": "typing-front-poster.png"
+ },
+ "air": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "events": []
+}

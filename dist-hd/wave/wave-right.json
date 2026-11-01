@@ -1,0 +1,45 @@
+{
+ "clip": "wave",
+ "facing": "right",
+ "fps": 12,
+ "loop": false,
+ "size": 512,
+ "frames": 21,
+ "sheet": {
+  "file": "wave-right-sheet.webp",
+  "cols": 8,
+  "rows": 3,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "wave-right.webm",
+  "mp4": "wave-right.mp4",
+  "gif": "wave-right.gif",
+  "poster": "wave-right-poster.png"
+ },
+ "air": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "events": []
+}

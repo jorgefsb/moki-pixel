@@ -1,0 +1,43 @@
+{
+ "clip": "building",
+ "facing": "front",
+ "fps": 12,
+ "loop": true,
+ "size": 512,
+ "frames": 12,
+ "sheet": {
+  "file": "building-front-sheet.webp",
+  "cols": 8,
+  "rows": 2,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "building-front.webm",
+  "mp4": "building-front.mp4",
+  "gif": "building-front.gif",
+  "poster": "building-front-poster.png"
+ },
+ "air": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "events": [
+  {
+   "frame": 5,
+   "names": [
+    "hit"
+   ]
+  }
+ ]
+}

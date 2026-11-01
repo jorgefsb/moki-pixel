@@ -1,0 +1,36 @@
+{
+ "clip": "dragged",
+ "facing": "right",
+ "fps": 12,
+ "loop": true,
+ "size": 512,
+ "frames": 12,
+ "sheet": {
+  "file": "dragged-right-sheet.webp",
+  "cols": 8,
+  "rows": 2,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "dragged-right.webm",
+  "mp4": "dragged-right.mp4",
+  "gif": "dragged-right.gif",
+  "poster": "dragged-right-poster.png"
+ },
+ "air": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "events": []
+}

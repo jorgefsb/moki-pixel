@@ -1,0 +1,53 @@
+{
+ "clip": "idle",
+ "facing": "back",
+ "fps": 12,
+ "loop": true,
+ "size": 512,
+ "frames": 29,
+ "sheet": {
+  "file": "idle-back-sheet.webp",
+  "cols": 8,
+  "rows": 4,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "idle-back.webm",
+  "mp4": "idle-back.mp4",
+  "gif": "idle-back.gif",
+  "poster": "idle-back-poster.png"
+ },
+ "air": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "events": []
+}

@@ -1,0 +1,36 @@
+{
+ "clip": "carry",
+ "facing": "right",
+ "fps": 12,
+ "loop": true,
+ "size": 512,
+ "frames": 12,
+ "sheet": {
+  "file": "carry-right-sheet.webp",
+  "cols": 8,
+  "rows": 2,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "carry-right.webm",
+  "mp4": "carry-right.mp4",
+  "gif": "carry-right.gif",
+  "poster": "carry-right-poster.png"
+ },
+ "air": [
+  1,
+  0,
+  0,
+  0,
+  0,
+  0,
+  1,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "events": []
+}

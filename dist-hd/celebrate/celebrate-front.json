@@ -1,0 +1,57 @@
+{
+ "clip": "celebrate",
+ "facing": "front",
+ "fps": 12,
+ "loop": false,
+ "size": 512,
+ "frames": 20,
+ "sheet": {
+  "file": "celebrate-front-sheet.webp",
+  "cols": 8,
+  "rows": 3,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "celebrate-front.webm",
+  "mp4": "celebrate-front.mp4",
+  "gif": "celebrate-front.gif",
+  "poster": "celebrate-front-poster.png"
+ },
+ "air": [
+  0,
+  0,
+  0,
+  34,
+  98,
+  120,
+  125,
+  126,
+  94,
+  21,
+  2,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "events": [
+  {
+   "frame": 3,
+   "names": [
+    "takeoff"
+   ]
+  },
+  {
+   "frame": 9,
+   "names": [
+    "land"
+   ]
+  }
+ ]
+}

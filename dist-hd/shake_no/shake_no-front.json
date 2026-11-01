@@ -1,0 +1,37 @@
+{
+ "clip": "shake_no",
+ "facing": "front",
+ "fps": 12,
+ "loop": false,
+ "size": 512,
+ "frames": 13,
+ "sheet": {
+  "file": "shake_no-front-sheet.webp",
+  "cols": 8,
+  "rows": 2,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "shake_no-front.webm",
+  "mp4": "shake_no-front.mp4",
+  "gif": "shake_no-front.gif",
+  "poster": "shake_no-front-poster.png"
+ },
+ "air": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "events": []
+}

@@ -1,0 +1,38 @@
+{
+ "clip": "juggling",
+ "facing": "right",
+ "fps": 12,
+ "loop": true,
+ "size": 512,
+ "frames": 14,
+ "sheet": {
+  "file": "juggling-right-sheet.webp",
+  "cols": 8,
+  "rows": 2,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "juggling-right.webm",
+  "mp4": "juggling-right.mp4",
+  "gif": "juggling-right.gif",
+  "poster": "juggling-right-poster.png"
+ },
+ "air": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "events": []
+}

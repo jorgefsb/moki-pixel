@@ -1,0 +1,44 @@
+{
+ "clip": "run",
+ "facing": "left",
+ "fps": 12,
+ "loop": true,
+ "size": 512,
+ "frames": 7,
+ "sheet": {
+  "file": "run-left-sheet.webp",
+  "cols": 7,
+  "rows": 1,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "run-left.webm",
+  "mp4": "run-left.mp4",
+  "gif": "run-left.gif",
+  "poster": "run-left-poster.png"
+ },
+ "air": [
+  7,
+  0,
+  0,
+  2,
+  4,
+  0,
+  0
+ ],
+ "events": [
+  {
+   "frame": 1,
+   "names": [
+    "step"
+   ]
+  },
+  {
+   "frame": 5,
+   "names": [
+    "step"
+   ]
+  }
+ ]
+}

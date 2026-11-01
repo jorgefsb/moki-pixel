@@ -1,0 +1,34 @@
+{
+ "clip": "ready",
+ "facing": "left",
+ "fps": 12,
+ "loop": true,
+ "size": 512,
+ "frames": 10,
+ "sheet": {
+  "file": "ready-left-sheet.webp",
+  "cols": 8,
+  "rows": 2,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "ready-left.webm",
+  "mp4": "ready-left.mp4",
+  "gif": "ready-left.gif",
+  "poster": "ready-left-poster.png"
+ },
+ "air": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "events": []
+}

@@ -1,0 +1,53 @@
+{
+ "clip": "hang",
+ "facing": "right",
+ "fps": 12,
+ "loop": true,
+ "size": 512,
+ "frames": 29,
+ "sheet": {
+  "file": "hang-right-sheet.webp",
+  "cols": 8,
+  "rows": 4,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "hang-right.webm",
+  "mp4": "hang-right.mp4",
+  "gif": "hang-right.gif",
+  "poster": "hang-right-poster.png"
+ },
+ "air": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "events": []
+}

@@ -1,0 +1,43 @@
+{
+ "clip": "point",
+ "facing": "left",
+ "fps": 12,
+ "loop": false,
+ "size": 512,
+ "frames": 19,
+ "sheet": {
+  "file": "point-left-sheet.webp",
+  "cols": 8,
+  "rows": 3,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "point-left.webm",
+  "mp4": "point-left.mp4",
+  "gif": "point-left.gif",
+  "poster": "point-left-poster.png"
+ },
+ "air": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "events": []
+}

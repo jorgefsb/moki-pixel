@@ -1,0 +1,222 @@
+{
+ "name": "Moki HD",
+ "version": "0.1.0",
+ "fps": 12,
+ "size": 512,
+ "clips": {
+  "attack": {
+   "left": "attack/attack-left.json",
+   "right": "attack/attack-right.json"
+  },
+  "ay": {
+   "front": "ay/ay-front.json",
+   "left": "ay/ay-left.json",
+   "right": "ay/ay-right.json"
+  },
+  "building": {
+   "front": "building/building-front.json",
+   "left": "building/building-left.json",
+   "right": "building/building-right.json"
+  },
+  "carry": {
+   "front": "carry/carry-front.json",
+   "left": "carry/carry-left.json",
+   "right": "carry/carry-right.json"
+  },
+  "celebrate": {
+   "front": "celebrate/celebrate-front.json",
+   "left": "celebrate/celebrate-left.json",
+   "right": "celebrate/celebrate-right.json"
+  },
+  "curious": {
+   "front": "curious/curious-front.json",
+   "left": "curious/curious-left.json",
+   "right": "curious/curious-right.json"
+  },
+  "dance": {
+   "front": "dance/dance-front.json",
+   "left": "dance/dance-left.json",
+   "right": "dance/dance-right.json"
+  },
+  "decision": {
+   "front": "decision/decision-front.json",
+   "left": "decision/decision-left.json",
+   "right": "decision/decision-right.json"
+  },
+  "doubt": {
+   "front": "doubt/doubt-front.json",
+   "left": "doubt/doubt-left.json",
+   "right": "doubt/doubt-right.json"
+  },
+  "dragged": {
+   "front": "dragged/dragged-front.json",
+   "left": "dragged/dragged-left.json",
+   "right": "dragged/dragged-right.json"
+  },
+  "falling": {
+   "front": "falling/falling-front.json",
+   "left": "falling/falling-left.json",
+   "right": "falling/falling-right.json"
+  },
+  "frustrated": {
+   "front": "frustrated/frustrated-front.json",
+   "left": "frustrated/frustrated-left.json",
+   "right": "frustrated/frustrated-right.json"
+  },
+  "hang": {
+   "front": "hang/hang-front.json",
+   "left": "hang/hang-left.json",
+   "right": "hang/hang-right.json"
+  },
+  "hit": {
+   "front": "hit/hit-front.json",
+   "left": "hit/hit-left.json",
+   "right": "hit/hit-right.json"
+  },
+  "idea": {
+   "front": "idea/idea-front.json",
+   "left": "idea/idea-left.json",
+   "right": "idea/idea-right.json"
+  },
+  "idle": {
+   "back": "idle/idle-back.json",
+   "front": "idle/idle-front.json",
+   "left": "idle/idle-left.json",
+   "right": "idle/idle-right.json"
+  },
+  "idle_look": {
+   "front": "idle_look/idle_look-front.json",
+   "left": "idle_look/idle_look-left.json",
+   "right": "idle_look/idle_look-right.json"
+  },
+  "juggling": {
+   "front": "juggling/juggling-front.json",
+   "left": "juggling/juggling-left.json",
+   "right": "juggling/juggling-right.json"
+  },
+  "jump": {
+   "front": "jump/jump-front.json",
+   "left": "jump/jump-left.json",
+   "right": "jump/jump-right.json"
+  },
+  "jump_fall": {
+   "front": "jump_fall/jump_fall-front.json",
+   "left": "jump_fall/jump_fall-left.json",
+   "right": "jump_fall/jump_fall-right.json"
+  },
+  "jump_rise": {
+   "front": "jump_rise/jump_rise-front.json",
+   "left": "jump_rise/jump_rise-left.json",
+   "right": "jump_rise/jump_rise-right.json"
+  },
+  "land": {
+   "front": "land/land-front.json",
+   "left": "land/land-left.json",
+   "right": "land/land-right.json"
+  },
+  "nod": {
+   "front": "nod/nod-front.json",
+   "left": "nod/nod-left.json",
+   "right": "nod/nod-right.json"
+  },
+  "peek": {
+   "front": "peek/peek-front.json",
+   "left": "peek/peek-left.json",
+   "right": "peek/peek-right.json"
+  },
+  "pickup": {
+   "front": "pickup/pickup-front.json",
+   "left": "pickup/pickup-left.json",
+   "right": "pickup/pickup-right.json"
+  },
+  "play": {
+   "front": "play/play-front.json",
+   "left": "play/play-left.json",
+   "right": "play/play-right.json"
+  },
+  "point": {
+   "front": "point/point-front.json",
+   "left": "point/point-left.json",
+   "right": "point/point-right.json"
+  },
+  "push": {
+   "left": "push/push-left.json",
+   "right": "push/push-right.json"
+  },
+  "ready": {
+   "left": "ready/ready-left.json",
+   "right": "ready/ready-right.json"
+  },
+  "run": {
+   "back": "run/run-back.json",
+   "front": "run/run-front.json",
+   "left": "run/run-left.json",
+   "right": "run/run-right.json"
+  },
+  "scared": {
+   "front": "scared/scared-front.json",
+   "left": "scared/scared-left.json",
+   "right": "scared/scared-right.json"
+  },
+  "shake_no": {
+   "front": "shake_no/shake_no-front.json",
+   "left": "shake_no/shake_no-left.json",
+   "right": "shake_no/shake_no-right.json"
+  },
+  "sit": {
+   "front": "sit/sit-front.json",
+   "left": "sit/sit-left.json",
+   "right": "sit/sit-right.json"
+  },
+  "sit_down": {
+   "front": "sit_down/sit_down-front.json",
+   "left": "sit_down/sit_down-left.json",
+   "right": "sit_down/sit_down-right.json"
+  },
+  "sleep": {
+   "front": "sleep/sleep-front.json",
+   "left": "sleep/sleep-left.json",
+   "right": "sleep/sleep-right.json"
+  },
+  "stand_up": {
+   "front": "stand_up/stand_up-front.json",
+   "left": "stand_up/stand_up-left.json",
+   "right": "stand_up/stand_up-right.json"
+  },
+  "talk": {
+   "front": "talk/talk-front.json",
+   "left": "talk/talk-left.json",
+   "right": "talk/talk-right.json"
+  },
+  "think": {
+   "front": "think/think-front.json",
+   "left": "think/think-left.json",
+   "right": "think/think-right.json"
+  },
+  "turn": {
+   "front": "turn/turn-front.json"
+  },
+  "typing": {
+   "front": "typing/typing-front.json",
+   "left": "typing/typing-left.json",
+   "right": "typing/typing-right.json"
+  },
+  "wake": {
+   "front": "wake/wake-front.json",
+   "left": "wake/wake-left.json",
+   "right": "wake/wake-right.json"
+  },
+  "walk": {
+   "back": "walk/walk-back.json",
+   "front": "walk/walk-front.json",
+   "left": "walk/walk-left.json",
+   "right": "walk/walk-right.json"
+  },
+  "wave": {
+   "front": "wave/wave-front.json",
+   "left": "wave/wave-left.json",
+   "right": "wave/wave-right.json"
+  }
+ },
+ "generated": "2026-11-01T20:00:32.391Z"
+}

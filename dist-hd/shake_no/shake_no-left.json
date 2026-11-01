@@ -1,0 +1,37 @@
+{
+ "clip": "shake_no",
+ "facing": "left",
+ "fps": 12,
+ "loop": false,
+ "size": 512,
+ "frames": 13,
+ "sheet": {
+  "file": "shake_no-left-sheet.webp",
+  "cols": 8,
+  "rows": 2,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "shake_no-left.webm",
+  "mp4": "shake_no-left.mp4",
+  "gif": "shake_no-left.gif",
+  "poster": "shake_no-left-poster.png"
+ },
+ "air": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "events": []
+}

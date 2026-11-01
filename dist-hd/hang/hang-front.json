@@ -1,0 +1,53 @@
+{
+ "clip": "hang",
+ "facing": "front",
+ "fps": 12,
+ "loop": true,
+ "size": 512,
+ "frames": 29,
+ "sheet": {
+  "file": "hang-front-sheet.webp",
+  "cols": 8,
+  "rows": 4,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "hang-front.webm",
+  "mp4": "hang-front.mp4",
+  "gif": "hang-front.gif",
+  "poster": "hang-front-poster.png"
+ },
+ "air": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "events": []
+}

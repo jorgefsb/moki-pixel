@@ -1,0 +1,43 @@
+{
+ "clip": "building",
+ "facing": "left",
+ "fps": 12,
+ "loop": true,
+ "size": 512,
+ "frames": 12,
+ "sheet": {
+  "file": "building-left-sheet.webp",
+  "cols": 8,
+  "rows": 2,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "building-left.webm",
+  "mp4": "building-left.mp4",
+  "gif": "building-left.gif",
+  "poster": "building-left-poster.png"
+ },
+ "air": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "events": [
+  {
+   "frame": 5,
+   "names": [
+    "hit"
+   ]
+  }
+ ]
+}

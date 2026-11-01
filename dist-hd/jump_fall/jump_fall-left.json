@@ -1,0 +1,29 @@
+{
+ "clip": "jump_fall",
+ "facing": "left",
+ "fps": 12,
+ "loop": true,
+ "size": 512,
+ "frames": 5,
+ "sheet": {
+  "file": "jump_fall-left-sheet.webp",
+  "cols": 5,
+  "rows": 1,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "jump_fall-left.webm",
+  "mp4": "jump_fall-left.mp4",
+  "gif": "jump_fall-left.gif",
+  "poster": "jump_fall-left-poster.png"
+ },
+ "air": [
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "events": []
+}

@@ -1,0 +1,47 @@
+{
+ "clip": "curious",
+ "facing": "right",
+ "fps": 12,
+ "loop": false,
+ "size": 512,
+ "frames": 23,
+ "sheet": {
+  "file": "curious-right-sheet.webp",
+  "cols": 8,
+  "rows": 3,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "curious-right.webm",
+  "mp4": "curious-right.mp4",
+  "gif": "curious-right.gif",
+  "poster": "curious-right-poster.png"
+ },
+ "air": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "events": []
+}

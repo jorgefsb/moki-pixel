@@ -1,0 +1,29 @@
+{
+ "clip": "jump_rise",
+ "facing": "front",
+ "fps": 12,
+ "loop": true,
+ "size": 512,
+ "frames": 5,
+ "sheet": {
+  "file": "jump_rise-front-sheet.webp",
+  "cols": 5,
+  "rows": 1,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "jump_rise-front.webm",
+  "mp4": "jump_rise-front.mp4",
+  "gif": "jump_rise-front.gif",
+  "poster": "jump_rise-front-poster.png"
+ },
+ "air": [
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "events": []
+}

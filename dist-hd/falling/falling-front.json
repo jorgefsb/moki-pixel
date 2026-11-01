@@ -1,0 +1,30 @@
+{
+ "clip": "falling",
+ "facing": "front",
+ "fps": 12,
+ "loop": true,
+ "size": 512,
+ "frames": 6,
+ "sheet": {
+  "file": "falling-front-sheet.webp",
+  "cols": 6,
+  "rows": 1,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "falling-front.webm",
+  "mp4": "falling-front.mp4",
+  "gif": "falling-front.gif",
+  "poster": "falling-front-poster.png"
+ },
+ "air": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "events": []
+}

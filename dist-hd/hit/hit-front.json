@@ -1,0 +1,32 @@
+{
+ "clip": "hit",
+ "facing": "front",
+ "fps": 12,
+ "loop": false,
+ "size": 512,
+ "frames": 8,
+ "sheet": {
+  "file": "hit-front-sheet.webp",
+  "cols": 8,
+  "rows": 1,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "hit-front.webm",
+  "mp4": "hit-front.mp4",
+  "gif": "hit-front.gif",
+  "poster": "hit-front-poster.png"
+ },
+ "air": [
+  0,
+  2,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "events": []
+}

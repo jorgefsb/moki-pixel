@@ -1,0 +1,38 @@
+{
+ "clip": "play",
+ "facing": "right",
+ "fps": 12,
+ "loop": true,
+ "size": 512,
+ "frames": 14,
+ "sheet": {
+  "file": "play-right-sheet.webp",
+  "cols": 8,
+  "rows": 2,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "play-right.webm",
+  "mp4": "play-right.mp4",
+  "gif": "play-right.gif",
+  "poster": "play-right-poster.png"
+ },
+ "air": [
+  0,
+  2,
+  2,
+  1,
+  0,
+  0,
+  0,
+  0,
+  2,
+  2,
+  2,
+  0,
+  0,
+  0
+ ],
+ "events": []
+}

@@ -1,0 +1,37 @@
+{
+ "clip": "land",
+ "facing": "left",
+ "fps": 12,
+ "loop": false,
+ "size": 512,
+ "frames": 6,
+ "sheet": {
+  "file": "land-left-sheet.webp",
+  "cols": 6,
+  "rows": 1,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "land-left.webm",
+  "mp4": "land-left.mp4",
+  "gif": "land-left.gif",
+  "poster": "land-left-poster.png"
+ },
+ "air": [
+  0,
+  0,
+  2,
+  2,
+  0,
+  0
+ ],
+ "events": [
+  {
+   "frame": 0,
+   "names": [
+    "land"
+   ]
+  }
+ ]
+}

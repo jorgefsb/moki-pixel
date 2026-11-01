@@ -1,0 +1,39 @@
+{
+ "clip": "decision",
+ "facing": "left",
+ "fps": 12,
+ "loop": false,
+ "size": 512,
+ "frames": 15,
+ "sheet": {
+  "file": "decision-left-sheet.webp",
+  "cols": 8,
+  "rows": 2,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "decision-left.webm",
+  "mp4": "decision-left.mp4",
+  "gif": "decision-left.gif",
+  "poster": "decision-left-poster.png"
+ },
+ "air": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "events": []
+}

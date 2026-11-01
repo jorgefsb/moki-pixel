@@ -1,0 +1,43 @@
+{
+ "clip": "ay",
+ "facing": "right",
+ "fps": 12,
+ "loop": false,
+ "size": 512,
+ "frames": 19,
+ "sheet": {
+  "file": "ay-right-sheet.webp",
+  "cols": 8,
+  "rows": 3,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "ay-right.webm",
+  "mp4": "ay-right.mp4",
+  "gif": "ay-right.gif",
+  "poster": "ay-right-poster.png"
+ },
+ "air": [
+  0,
+  44,
+  45,
+  23,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "events": []
+}

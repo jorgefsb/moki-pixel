@@ -1,0 +1,36 @@
+{
+ "clip": "nod",
+ "facing": "front",
+ "fps": 12,
+ "loop": false,
+ "size": 512,
+ "frames": 12,
+ "sheet": {
+  "file": "nod-front-sheet.webp",
+  "cols": 8,
+  "rows": 2,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "nod-front.webm",
+  "mp4": "nod-front.mp4",
+  "gif": "nod-front.gif",
+  "poster": "nod-front-poster.png"
+ },
+ "air": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "events": []
+}

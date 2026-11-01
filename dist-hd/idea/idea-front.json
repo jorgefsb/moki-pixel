@@ -1,0 +1,41 @@
+{
+ "clip": "idea",
+ "facing": "front",
+ "fps": 12,
+ "loop": false,
+ "size": 512,
+ "frames": 17,
+ "sheet": {
+  "file": "idea-front-sheet.webp",
+  "cols": 8,
+  "rows": 3,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "idea-front.webm",
+  "mp4": "idea-front.mp4",
+  "gif": "idea-front.gif",
+  "poster": "idea-front-poster.png"
+ },
+ "air": [
+  0,
+  0,
+  3,
+  36,
+  44,
+  31,
+  0,
+  0,
+  2,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "events": []
+}

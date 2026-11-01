@@ -1,0 +1,36 @@
+{
+ "clip": "carry",
+ "facing": "left",
+ "fps": 12,
+ "loop": true,
+ "size": 512,
+ "frames": 12,
+ "sheet": {
+  "file": "carry-left-sheet.webp",
+  "cols": 8,
+  "rows": 2,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "carry-left.webm",
+  "mp4": "carry-left.mp4",
+  "gif": "carry-left.gif",
+  "poster": "carry-left-poster.png"
+ },
+ "air": [
+  1,
+  0,
+  0,
+  0,
+  0,
+  0,
+  1,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "events": []
+}

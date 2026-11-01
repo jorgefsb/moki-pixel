@@ -1,0 +1,39 @@
+{
+ "clip": "decision",
+ "facing": "right",
+ "fps": 12,
+ "loop": false,
+ "size": 512,
+ "frames": 15,
+ "sheet": {
+  "file": "decision-right-sheet.webp",
+  "cols": 8,
+  "rows": 2,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "decision-right.webm",
+  "mp4": "decision-right.mp4",
+  "gif": "decision-right.gif",
+  "poster": "decision-right-poster.png"
+ },
+ "air": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "events": []
+}

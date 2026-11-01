@@ -1,0 +1,34 @@
+{
+ "clip": "typing",
+ "facing": "right",
+ "fps": 12,
+ "loop": true,
+ "size": 512,
+ "frames": 10,
+ "sheet": {
+  "file": "typing-right-sheet.webp",
+  "cols": 8,
+  "rows": 2,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "typing-right.webm",
+  "mp4": "typing-right.mp4",
+  "gif": "typing-right.gif",
+  "poster": "typing-right-poster.png"
+ },
+ "air": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "events": []
+}

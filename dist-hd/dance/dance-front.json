@@ -1,0 +1,48 @@
+{
+ "clip": "dance",
+ "facing": "front",
+ "fps": 12,
+ "loop": true,
+ "size": 512,
+ "frames": 24,
+ "sheet": {
+  "file": "dance-front-sheet.webp",
+  "cols": 8,
+  "rows": 3,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "dance-front.webm",
+  "mp4": "dance-front.mp4",
+  "gif": "dance-front.gif",
+  "poster": "dance-front-poster.png"
+ },
+ "air": [
+  0,
+  4,
+  4,
+  0,
+  4,
+  4,
+  0,
+  4,
+  4,
+  0,
+  4,
+  4,
+  0,
+  4,
+  4,
+  0,
+  4,
+  4,
+  0,
+  4,
+  4,
+  0,
+  4,
+  4
+ ],
+ "events": []
+}

@@ -1,0 +1,37 @@
+{
+ "clip": "land",
+ "facing": "front",
+ "fps": 12,
+ "loop": false,
+ "size": 512,
+ "frames": 6,
+ "sheet": {
+  "file": "land-front-sheet.webp",
+  "cols": 6,
+  "rows": 1,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "land-front.webm",
+  "mp4": "land-front.mp4",
+  "gif": "land-front.gif",
+  "poster": "land-front-poster.png"
+ },
+ "air": [
+  0,
+  0,
+  2,
+  2,
+  0,
+  0
+ ],
+ "events": [
+  {
+   "frame": 0,
+   "names": [
+    "land"
+   ]
+  }
+ ]
+}

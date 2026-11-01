@@ -1,0 +1,39 @@
+{
+ "clip": "attack",
+ "facing": "right",
+ "fps": 12,
+ "loop": false,
+ "size": 512,
+ "frames": 8,
+ "sheet": {
+  "file": "attack-right-sheet.webp",
+  "cols": 8,
+  "rows": 1,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "attack-right.webm",
+  "mp4": "attack-right.mp4",
+  "gif": "attack-right.gif",
+  "poster": "attack-right-poster.png"
+ },
+ "air": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "events": [
+  {
+   "frame": 2,
+   "names": [
+    "hit"
+   ]
+  }
+ ]
+}

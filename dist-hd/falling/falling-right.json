@@ -1,0 +1,30 @@
+{
+ "clip": "falling",
+ "facing": "right",
+ "fps": 12,
+ "loop": true,
+ "size": 512,
+ "frames": 6,
+ "sheet": {
+  "file": "falling-right-sheet.webp",
+  "cols": 6,
+  "rows": 1,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "falling-right.webm",
+  "mp4": "falling-right.mp4",
+  "gif": "falling-right.gif",
+  "poster": "falling-right-poster.png"
+ },
+ "air": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "events": []
+}

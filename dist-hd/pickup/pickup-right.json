@@ -1,0 +1,41 @@
+{
+ "clip": "pickup",
+ "facing": "right",
+ "fps": 12,
+ "loop": false,
+ "size": 512,
+ "frames": 17,
+ "sheet": {
+  "file": "pickup-right-sheet.webp",
+  "cols": 8,
+  "rows": 3,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "pickup-right.webm",
+  "mp4": "pickup-right.mp4",
+  "gif": "pickup-right.gif",
+  "poster": "pickup-right-poster.png"
+ },
+ "air": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  2,
+  2,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "events": []
+}

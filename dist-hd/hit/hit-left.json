@@ -1,0 +1,32 @@
+{
+ "clip": "hit",
+ "facing": "left",
+ "fps": 12,
+ "loop": false,
+ "size": 512,
+ "frames": 8,
+ "sheet": {
+  "file": "hit-left-sheet.webp",
+  "cols": 8,
+  "rows": 1,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "hit-left.webm",
+  "mp4": "hit-left.mp4",
+  "gif": "hit-left.gif",
+  "poster": "hit-left-poster.png"
+ },
+ "air": [
+  0,
+  2,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "events": []
+}

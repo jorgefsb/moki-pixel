@@ -1,0 +1,41 @@
+{
+ "clip": "idea",
+ "facing": "right",
+ "fps": 12,
+ "loop": false,
+ "size": 512,
+ "frames": 17,
+ "sheet": {
+  "file": "idea-right-sheet.webp",
+  "cols": 8,
+  "rows": 3,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "idea-right.webm",
+  "mp4": "idea-right.mp4",
+  "gif": "idea-right.gif",
+  "poster": "idea-right-poster.png"
+ },
+ "air": [
+  0,
+  0,
+  3,
+  36,
+  44,
+  31,
+  0,
+  0,
+  2,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "events": []
+}

@@ -1,0 +1,35 @@
+{
+ "clip": "sit_down",
+ "facing": "right",
+ "fps": 12,
+ "loop": false,
+ "size": 512,
+ "frames": 11,
+ "sheet": {
+  "file": "sit_down-right-sheet.webp",
+  "cols": 8,
+  "rows": 2,
+  "frameW": 512,
+  "frameH": 512
+ },
+ "files": {
+  "webm": "sit_down-right.webm",
+  "mp4": "sit_down-right.mp4",
+  "gif": "sit_down-right.gif",
+  "poster": "sit_down-right-poster.png"
+ },
+ "air": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "events": []
+}
