@@ -90,7 +90,7 @@ function sdCyl(axial, ra, rb, r, a0, a1) {
   return Math.min(Math.max(dr, da), 0) + Math.hypot(Math.max(dr, 0), Math.max(da, 0));
 }
 
-function primDist(pr, x, y, z) {
+export function primDist(pr, x, y, z) {
   switch (pr.type) {
     case 'ellipsoid':
       return sdEllipsoid(x - pr.c[0], y - pr.c[1], z - pr.c[2], pr.r);
@@ -109,7 +109,7 @@ function primDist(pr, x, y, z) {
   }
   return 1e9;
 }
-function primBound(pr) {
+export function primBound(pr) {
   switch (pr.type) {
     case 'ellipsoid':
       return [pr.c, Math.max(...pr.r)];
