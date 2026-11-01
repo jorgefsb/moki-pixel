@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moki HD · Moki de cartón en movimiento</title>
+<meta name="description" content="Moki HD: las 43 animaciones de Moki en alta resolución, con acabado de cartón y papel. Mismo esqueleto que Moki Pixel, canon por construcción. Video con transparencia, MP4, GIF y hojas de cuadros. Hecho con amor por JorgeSuarez.com.mx.">
+<meta name="theme-color" content="#0A0A0A">
+<meta property="og:title" content="Moki HD">
+<meta property="og:description" content="Las 43 animaciones de Moki en alta resolución, de cartón y en movimiento.">
+<meta property="og:image" content="https://moki.jorgesuarez.com.mx/hd/og.png">
+<meta property="og:url" content="https://moki.jorgesuarez.com.mx/hd/">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="preload" href="fonts/Outfit-Bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="hd.css">
+<link rel="stylesheet" href="/menu.css">
+</head>
+<body>
+<a class="skip" href="#contenido" data-i18n="skip">Saltar al contenido</a>
+<header class="top">
+  <a class="brand" href="./" aria-label="Moki HD, inicio"><img src="favicon.png" alt="" width="28" height="28"> <b>Moki</b> HD</a>
+  <nav class="moki-menu" data-moki-menu aria-label="Menú de Moki"></nav>
+  <div class="tools"><button id="lang" class="chip" aria-label="Cambiar idioma">EN</button></div>
+</header>
+
+<main id="contenido">
+<section class="hero">
+  <div class="hero-copy">
+    <p class="kicker" data-i18n="kicker">Pack de animación · alta resolución · versión 0.1 (propuesta)</p>
+    <h1 data-i18n="h1">Moki, de cartón y en movimiento.</h1>
+    <p class="lead" data-i18n="lead">Las 43 animaciones de Moki en alta resolución, con acabado de papel mate. Sale del mismo esqueleto que Moki Pixel, así que el canon viene incluido: el parche MOKI siempre en su oreja derecha, el visor sin cara y nunca en espejo.</p>
+    <div class="cta">
+      <a class="btn" href="#galeria" data-i18n="cta.ver">Ver las animaciones</a>
+      <a class="btn ghost" href="/pixel/" data-i18n="cta.pixel">Ir a Moki Pixel</a>
+      <a class="btn ghost" href="https://github.com/jorgefsb/moki-pixel" rel="noopener" data-i18n="cta.code">Código en GitHub</a>
+    </div>
+  </div>
+  <div class="hero-stage">
+    <video id="heroVid" muted loop playsinline preload="auto" poster="dist/wave/wave-right-poster.png" aria-label="Moki saluda">
+      <source src="dist/wave/wave-right.mp4" type="video/mp4">
+    </video>
+  </div>
+</section>
+
+<section class="facts" aria-label="Lo que trae">
+  <div><b>43</b><span data-i18n="f.clips">animaciones</span></div>
+  <div><b>4</b><span data-i18n="f.vistas">vistas</span></div>
+  <div><b>512 px</b><span data-i18n="f.size">por cuadro</span></div>
+  <div><b>12</b><span data-i18n="f.fps">cuadros por segundo</span></div>
+</section>
+
+<section id="galeria" class="block">
+  <div class="block-head">
+    <h2 data-i18n="g.h">Todas las animaciones</h2>
+    <div class="facing" role="group" aria-label="Vista">
+      <button data-facing="right" aria-pressed="true" data-i18n="v.right">Derecha</button>
+      <button data-facing="front" aria-pressed="false" data-i18n="v.front">Frente</button>
+      <button data-facing="left" aria-pressed="false" data-i18n="v.left">Izquierda</button>
+      <button data-facing="back" aria-pressed="false" data-i18n="v.back">Espalda</button>
+    </div>
+  </div>
+  <p class="note" data-i18n="g.note">Cada tarjeta trae video con transparencia (WebM), MP4 sobre crema para redes, GIF y hoja de cuadros con su JSON para juegos. Espalda solo existe en caminar, correr y respirar.</p>
+  <div id="grid" class="grid" aria-live="polite"></div>
+</section>
+
+<section class="block two">
+  <div>
+    <h2 data-i18n="h.how">Cómo se hizo</h2>
+    <p data-i18n="p.how1">Moki Pixel arma a Moki con piezas geométricas y un esqueleto de 16 huesos. Moki HD dibuja ese mismo modelo en alta resolución: luz suave sobre papel mate, fibra de cartón, sombra donde una pieza toca a otra y un borde de recorte.</p>
+    <p data-i18n="p.how2">Como cada vista sale de girar el modelo y no de voltear una imagen, el parche MOKI nunca cambia de oreja. Las letras del parche y el control del pecho se redibujan en vector para que se lean limpios a cualquier tamaño.</p>
+  </div>
+  <div>
+    <h2 data-i18n="h.use">Úsalo</h2>
+    <ul class="list">
+      <li data-i18n="u1">Páginas y apps: el WebM tiene transparencia; el MP4 va sobre crema para redes.</li>
+      <li data-i18n="u2">Juegos: la hoja de cuadros (WebP) trae columnas y medidas en su JSON, más el salto de cada cuadro para aplicarlo en tu motor.</li>
+      <li data-i18n="u3">Videos: combínalo con las escenas programáticas de Moki Pixel.</li>
+      <li data-i18n="u4">Licencia: el código es MIT; el arte de Moki es CC BY-NC 4.0, igual que Moki Pixel. Da crédito a JorgeSuarez.com.mx.</li>
+    </ul>
+    <p class="status" data-i18n="status">Estado: propuesta 0.1. El canon de Moki manda; si ves algo raro, avísanos.</p>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <p data-i18n="foot">Hecho con amor ❤️🎮 por JorgeSuarez.com.mx para explorar y jugar con IA y videojuegos.</p>
+  <a href="https://jorgesuarez.com.mx" rel="noopener">← JorgeSuarez.com.mx</a>
+</footer>
+<script src="hd.js" defer></script>
+<script src="/menu.js" defer></script>
+</body>
+</html>

@@ -1,6 +1,6 @@
-name: Deploy moki.jorgesuarez.com.mx/pixel
+name: Deploy moki.jorgesuarez.com.mx/pixel y /hd
 on:
-  push: { branches: [main], paths: ['site/**', 'dist/**', 'deploy/**', 'tools/site.mjs'] }
+  push: { branches: [main], paths: ['site/**', 'dist/**', 'site-hd/**', 'dist-hd/**', 'deploy/**', 'tools/site.mjs'] }
   workflow_dispatch:
 concurrency: { group: deploy, cancel-in-progress: false }
 jobs:
@@ -26,3 +26,4 @@ jobs:
           curl -sf -o /dev/null -w "%{http_code}\n" https://moki.jorgesuarez.com.mx/pixel/
           curl -sf -o /dev/null -w "%{http_code}\n" https://moki.jorgesuarez.com.mx/pixel/dist/manifest.json
           curl -sf -o /dev/null -w "%{http_code}\n" https://moki.jorgesuarez.com.mx/
+          if [ -d dist-hd ]; then curl -sf -o /dev/null -w "%{http_code}\n" https://moki.jorgesuarez.com.mx/hd/; curl -sf -o /dev/null -w "%{http_code}\n" https://moki.jorgesuarez.com.mx/hd/dist/catalog.json; fi
