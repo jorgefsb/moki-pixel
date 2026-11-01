@@ -33,6 +33,9 @@ async function renderJob({ clip, facing, size, tmp }) {
   const frames = [];
   const canvas = createCanvas(size, size);
   const g = canvas.getContext('2d');
+  const cols = Math.min(8, count), rows = Math.ceil(count / cols);
+  const sheet = createCanvas(size * cols, size * rows);
+  const sg = sheet.getContext('2d');
   for (let i = 0; i < count; i++) {
     const t = i / FPS;
     const pose = sampleClip(c, t, FACINGS[facing]);
@@ -45,10 +48,11 @@ async function renderJob({ clip, facing, size, tmp }) {
     g.putImageData(img, 0, 0);
     const f = path.join(tmp, `f${String(i).padStart(4, '0')}.png`);
     writeFileSync(f, canvas.toBuffer('image/png'));
+    sg.drawImage(canvas, (i % cols) * size, Math.floor(i / cols) * size);
     const ev = (c.events || []).filter((e) => e.t >= t - 1e-6 && e.t < t + 1 / FPS - 1e-6).map((e) => e.name);
     frames.push({ i, t: +t.toFixed(4), air: Math.round(air * opts.s), events: ev });
   }
-  return { clip, facing, loop: !!c.loop, frames };
+  return { clip, facing, loop: !!c.loop, frames, sheet: await sheet.encode('webp', 88) };
 }
 
 function ff(argv) { execFileSync('ffmpeg', ['-loglevel', 'error', '-y', ...argv], { stdio: 'inherit' }); }
@@ -64,9 +68,9 @@ function encode(job, res, out, size) {
   ff(['-framerate', String(FPS), '-i', inp, '-filter_complex', `color=c=0xF4E8D5:s=${size}x${size}:r=${FPS}[bg];[bg][0:v]overlay=shortest=1,format=yuv420p`, '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '20', '-movflags', '+faststart', path.join(dir, `${base}.mp4`)]);
   const gs = Math.round(size / 2);
   ff(['-framerate', String(FPS), '-i', inp, '-filter_complex', `color=c=0xF4E8D5:s=${size}x${size}:r=${FPS}[bg];[bg][0:v]overlay=shortest=1,scale=${gs}:${gs}:flags=lanczos,split[a][b];[a]palettegen=max_colors=128[p];[b][p]paletteuse=dither=bayer:bayer_scale=3`, '-loop', '0', path.join(dir, `${base}.gif`)]);
-  // Hoja de cuadros WebP (columnas fijas) para motores 2D
+  // Hoja de cuadros WebP (columnas fijas) para motores 2D: se arma con canvas, sin depender de libwebp en ffmpeg
   const cols = Math.min(8, n), rows = Math.ceil(n / cols);
-  ff(['-framerate', String(FPS), '-i', inp, '-vf', `tile=${cols}x${rows}:padding=0:color=0x00000000`, '-frames:v', '1', '-c:v', 'libwebp', '-lossless', '0', '-q:v', '88', '-pix_fmt', 'yuva420p', path.join(dir, `${base}-sheet.webp`)]);
+  writeFileSync(path.join(dir, `${base}-sheet.webp`), res.sheet);
   const mid = Math.floor(n / 2);
   ff(['-i', path.join(job.tmp, `f${String(mid).padStart(4, '0')}.png`), '-frames:v', '1', path.join(dir, `${base}-poster.png`)]);
   const meta = {
@@ -99,6 +103,7 @@ if (!isMainThread) {
     if (!CLIPS[clip]) { console.error('no existe el clip', clip); continue; }
     const allowed = CLIPS[clip].facings || ['right', 'left', 'front'];
     for (const facing of facings) if (allowed.includes(facing)) {
+      if (existsSync(path.join(out, clip, `${clip}-${facing}.json`)) && !o.force) continue;
       const tmp = path.join(tmpRoot, `${clip}-${facing}`);
       mkdirSync(tmp, { recursive: true });
       jobs.push({ clip, facing, size, tmp });
@@ -108,14 +113,15 @@ if (!isMainThread) {
   const t0 = Date.now();
   const metas = [];
   let next = 0, done = 0;
-  await new Promise((resolve, reject) => {
+  if (jobs.length) await new Promise((resolve, reject) => {
     const pool = [];
     const feed = (w) => { if (next < jobs.length) w.postMessage(jobs[next++]); else { w.terminate(); if (done === jobs.length) resolve(); } };
     for (let i = 0; i < Math.min(W, jobs.length); i++) {
       const w = new Worker(fileURLToPath(import.meta.url));
       w.on('message', (m) => {
         if (!m.ok) { reject(new Error(m.err)); return; }
-        metas.push(encode(m.job, m.res, out, size));
+        try { metas.push(encode(m.job, m.res, out, size)); }
+        catch (e) { console.error(`  FALLO al codificar ${m.job.clip}-${m.job.facing}: ${String(e.message || e).split('\n')[0]}`); }
         rmSync(m.job.tmp, { recursive: true, force: true });
         done++;
         console.log(`  ${done}/${jobs.length} ${m.job.clip}-${m.job.facing} (${m.res.frames.length} cuadros, ${((Date.now() - t0) / 1000).toFixed(0)} s)`);
@@ -132,6 +138,11 @@ if (!isMainThread) {
   let man = { name: 'Moki HD', version: '0.1.0', fps: FPS, size, clips: {} };
   if (existsSync(manPath)) try { man = { ...man, ...JSON.parse((await import('node:fs')).readFileSync(manPath, 'utf8')) }; } catch {}
   for (const m of metas) { (man.clips[m.clip] ||= {})[m.facing] = `${m.clip}/${m.clip}-${m.facing}.json`; }
+  for (const d of readdirSync(out)) {
+    const dd = path.join(out, d);
+    if (d.startsWith('.') || !statSync(dd).isDirectory()) continue;
+    for (const f of readdirSync(dd)) { const mm = f.match(/^(.+)-(right|left|front|back)\.json$/); if (mm) (man.clips[mm[1]] ||= {})[mm[2]] = `${d}/${f}`; }
+  }
   man.generated = new Date().toISOString();
   writeFileSync(manPath, JSON.stringify(man, null, 1));
   let bytes = 0;
