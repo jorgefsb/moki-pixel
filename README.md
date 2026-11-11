@@ -1,128 +1,129 @@
+<div align="center">
+
+<a href="https://moki.jorgesuarez.com.mx/pixel/"><img src="docs/readme/banner-en.svg" width="1000" alt="Moki Pixel: Moki in pixel art, ready to play: 43 animations for your game, your page and your desktop." /></a>
+
+<br />
+
+<img src="docs/readme/lang-en-on.svg" height="44" alt="English, current language" />
+<a href="./README.es.md"><img src="docs/readme/lang-es.svg" height="44" alt="Leer en español" /></a>
+
+<br />
+
+**[▶ See it live](https://moki.jorgesuarez.com.mx/pixel/)** · More projects at [github.com/jorgefsb](https://github.com/jorgefsb)
+
+</div>
+
+---
+
 <p align="center">
-  <img src="dist/gif/moki_wave_front.gif" width="128" alt="Moki saluda">
-  <img src="dist/gif/moki_walk_right.gif" width="128" alt="Moki camina">
-  <img src="dist/gif/moki_juggling_right.gif" width="128" alt="Moki hace malabares">
-  <img src="dist/gif/moki_celebrate_right.gif" width="128" alt="Moki celebra">
-  <img src="dist/gif/moki_sleep_right.gif" width="128" alt="Moki duerme">
+  <img src="dist/gif/moki_wave_front.gif" width="120" alt="Moki waves">
+  <img src="dist/gif/moki_walk_right.gif" width="120" alt="Moki walks">
+  <img src="dist/gif/moki_juggling_right.gif" width="120" alt="Moki juggles">
+  <img src="dist/gif/moki_celebrate_right.gif" width="120" alt="Moki celebrates">
+  <img src="dist/gif/moki_sleep_right.gif" width="120" alt="Moki sleeps">
 </p>
+<p align="center"><sub>Real animations from the kit, straight out of <code>dist/gif</code>.</sub></p>
 
-# Moki Pixel
+## What is it?
 
-**Moki en pixel art, listo para jugar.** Un kit abierto de animación para usar a Moki en juegos, páginas, apps, wallpapers, videos y en tu escritorio.
+An open animation kit to use Moki in games, pages, apps, wallpapers, videos and on your desktop. Moki is Jorge Suárez's explorer alter ego: he discovers, gets things wrong and builds worlds while he learns.
 
-Moki es el alter ego explorador de Jorge Suárez: descubre, se equivoca y construye mundos mientras aprende. Lo hicimos para explorar y jugar con IA y videojuegos, y lo abrimos para que cualquiera pueda hacer lo mismo.
+## Who is it for?
 
-> Hecho con amor ❤️🎮 por [JorgeSuarez.com.mx](https://jorgesuarez.com.mx) · Pruébalo en vivo: **[moki.jorgesuarez.com.mx/pixel](https://moki.jorgesuarez.com.mx/pixel/)**
+- People making games in Phaser, Godot, Unity or GameMaker who want a character that is already animated.
+- People with a website who want a pet walking around it.
+- People who use Claude Code and want Moki on their desktop reacting to what they do.
+- People who want to make GIFs and videos with a character from a script.
 
-## Qué trae
+## What pain does it solve?
 
-| | |
+A character that only exists as an illustration cannot be played. To put it in a game or on a page you have to draw every frame, every view and every size, and flipping the sprite breaks details like the ear patch.
+
+## The proposal
+
+Moki is not drawn frame by frame. He lives as a simple 3D mannequin that is converted to pixel art, so every view and size comes out consistent and the patch never changes sides. We made it to explore and play with AI and video games, and we opened it so anyone can do the same.
+
+| What you get | Detail |
 |---|---|
-| **43 animaciones** | locomoción, salto por fases, gestos, emociones, actividades, descanso y modo mascota |
-| **4 vistas** | derecha, izquierda, frente y espalda (locomoción en las 4 para juegos top-down) |
-| **3 tamaños** | 32 px (ícono), 64 px (juego y mascota), 128 px (héroe, parche MOKI legible) |
-| **12 emotes** | burbujas de papel sobre el casco: ! ? … idea estrella corazón Zz garabato nota palomita engrane «¡Ay!» |
-| **FX** | polvo, chispas, confeti y sombra de contacto |
-| **Exportes para motores** | Aseprite JSON (Phaser lo lee directo), Godot 4 SpriteFrames, tiras GameMaker, rejilla para Unity |
-| **Anclas por cuadro** | cabeza, manos, pecho, mochila y pies, para colgar emotes, props o partículas |
-| **Videos programáticos** | guion JSON → MP4, WebM o GIF en 16:9, 9:16, 1:1 y 4:5 |
-| **Wallpapers** | 4 escenas × 6 tamaños (1080p, 1440p, 4K, ultrawide, iPhone, Android) |
-| **Hoja de personaje** | vuelta completa, proporciones, paleta, lateralidad y expresiones |
-| **Mascota web** | una línea de código y Moki camina por tu página |
-| **Mascota de escritorio** | macOS, Windows y Linux (incluye Omarchy/Hyprland), con hooks de Claude Code |
-| **Skill para Claude** | para que Claude genere escenas, GIFs y videos respetando el canon |
+| 43 animations | Locomotion, jump, gestures, emotions, activities, rest and pet mode |
+| 4 views | Right, left, front and back |
+| 3 sizes | 32, 64 and 128 px |
+| 12 emotes and FX | Bubbles over the helmet, dust, sparks, confetti and shadow |
+| Engine exports | Aseprite JSON (Phaser), Godot 4, GameMaker and Unity |
+| Web and desktop pet | macOS, Windows and Linux, with Claude Code hooks |
+| Videos and wallpapers | JSON script to MP4, WebM or GIF; 4 scenes in 6 sizes |
 
-<p align="center"><img src="dist/moki-hoja-de-personaje.png" width="640" alt="Hoja de personaje pixel art de Moki"></p>
+<p align="center"><img src="dist/moki-hoja-de-personaje.png" width="640" alt="Moki pixel art character sheet: full turnaround, proportions, palette and expressions"></p>
 
-## Úsalo en 1 minuto
+## How do I use it?
 
-### En tu página web
+On your page, with one line:
 
 ```html
 <script src="https://moki.jorgesuarez.com.mx/pixel/dist/runtime/moki-pet.js" data-juice="poquito"></script>
 ```
 
-Niveles de juego (los mismos de la marca): `nada` · `poquito` · `mucho` · `hardcore`. Si la persona pidió movimiento reducido, Moki se queda quieto. API: `MokiPixel.pet.say('Hola')`, `.act('celebrate')`, `.walkTo(400)`, `.emote('idea')`, `.hide()`.
-
-### Como componente (React, Vue, Svelte, Astro, HTML)
-
-```html
-<script type="module" src="https://moki.jorgesuarez.com.mx/pixel/dist/runtime/moki.mjs"></script>
-<moki-sprite clip="play" facing="right" size="64" scale="3"></moki-sprite>
-```
-
-### En tu juego
+In your game with Phaser 3:
 
 ```js
-// Phaser 3
 this.load.aseprite('moki', 'moki-64-right.png', 'moki-64-right.json');
 this.anims.createFromAseprite('moki');
 this.add.sprite(160, 120, 'moki').play({ key: 'walk', repeat: -1 });
 ```
 
-Godot, Unity y GameMaker en [docs/integraciones.md](docs/integraciones.md).
+On your desktop: download the installer from [Releases](https://github.com/jorgefsb/moki-pixel/releases).
 
-### Un video con Claude
+The web component, Godot, Unity, GameMaker, videos and the Claude skill are covered in the [full guide](./docs/GUIA.md) (in Spanish).
 
-```bash
-npm install
-node tools/scene.mjs scenes/hola-moki.json --out hola.mp4
-```
+## When it fits and when it doesn't
 
-Claude puede escribir el guion por ti con la skill [`claude/skills/moki-pixel`](claude/skills/moki-pixel/SKILL.md).
+It fits if you want a character with ready-made animations for a prototype, a page, a stream or a video.
 
-### En tu escritorio
+Keep in mind:
 
-Descarga el instalador en [Releases](https://github.com/jorgefsb/moki-pixel/releases) o córrelo desde el código:
+- Moki's art is not for commercial use without permission (CC BY-NC 4.0).
+- Never mirror the sprite: use the `left` atlas. The MOKI patch lives only on his right ear.
+- The desktop installers are not signed yet: macOS and Windows show a warning.
 
-```bash
-cd desktop && npm install && npm start
-```
+## Where can I try it?
 
-Con los hooks de Claude Code, Moki piensa cuando le escribes, teclea cuando edita, construye cuando corre comandos y celebra cuando termina. Ver [desktop/README.md](desktop/README.md).
+Live: **[moki.jorgesuarez.com.mx/pixel](https://moki.jorgesuarez.com.mx/pixel/)**
 
-## Las reglas de Moki (canon)
+<p align="center"><img src="docs/readme/tour.gif" width="720" alt="Walkthrough of Moki Pixel"></p>
+<p align="center"><sub>Real walkthrough of the live site, recorded 10 Nov 2026 in Chromium (1280×720). No retouching. <a href="docs/readme/tour.mp4">Watch the MP4 video</a></sub></p>
 
-1. El parche **MOKI** vive solo en la oreja derecha anatómica. **Nunca espejes** el sprite: cada vista sale de la geometría y ya trae su lado correcto. Usa el atlas `left`, no `flipX`.
-2. El visor **no tiene ojos, cejas, boca ni emoticonos**. Moki expresa con postura, gesto y ritmo; las emociones van en burbujas sobre el casco.
-3. Casco crema con franja naranja, visor oscuro, traje naranja, guantes y botas oscuros, arnés petróleo. El emblema del pecho es fijo y distinto del control que sostiene.
-4. Curioso y cercano. Nunca experto infalible ni torpe permanente, nunca agresivo de forma permanente.
-5. Escala siempre en múltiplos enteros con vecino más cercano (`image-rendering: pixelated`).
+<p align="center">
+  <img src="docs/readme/desktop.jpg" width="620" alt="Moki Pixel on desktop">
+  <img src="docs/readme/mobile.jpg" width="190" alt="Moki Pixel on mobile">
+</p>
+<p align="center"><sub>Real screenshots of the live site, 10 Nov 2026: desktop (1280×720) and mobile (390×780).</sub></p>
 
-Guías completas: [personaje](docs/guia-de-personaje.md) · [arte pixel](docs/guia-de-arte-pixel.md) · [animación y 12 principios](docs/animacion.md) · [escenas y video](docs/escenas.md) · [estado de aprobación](docs/estado.md).
+## How far we got
 
-## Cómo está hecho
+Version 0.1.0. Moki's design has been approved since 12 October 2026; this pixel art adaptation is a proposal built on that design.
 
-Moki no está dibujado cuadro por cuadro: vive como un maniquí 3D sencillo (primitivas SDF con las proporciones del brief, H = 1000 u) que se rasteriza a pixel art con paleta cerrada, sombreado por bandas, contorno selectivo y líneas de traslape. Las animaciones combinan poses clave con capas procedurales, y el motor agrega acción continuada a la mochila. Por eso cualquier vista o tamaño sale consistente y el parche nunca cambia de lado.
+Pending as of 30 October 2026: approval of the kit, a physical test of the desktop pet on macOS, Windows and Linux, and signing the installers. Details live in [docs/estado.md](./docs/estado.md) (in Spanish).
 
-```
-src/core      modelo, paleta, render pixel, props y FX
-src/anim      easing, muestreo y la biblioteca de 43 clips
-src/runtime   reproductor web, <moki-sprite> y la mascota
-tools         build, escenas/video, wallpapers, hoja de personaje, sitio
-desktop       mascota de escritorio (Electron)
-dist          todo lo generado, listo para usar
-```
+## For builders
 
 ```bash
 npm install
-npm run build        # sprites, tiras, Godot, GIFs, FX, runtime, hoja, wallpapers
-npm run site         # sitio para moki.jorgesuarez.com.mx/pixel
+npm run build        # sprites, strips, Godot, GIFs, FX, runtime, sheet and wallpapers
+npm run site         # site for moki.jorgesuarez.com.mx/pixel
 ```
 
-## Inspiración
+How it is made, Moki's canon and every integration: [full guide](./docs/GUIA.md). Guides by topic, in Spanish: [character](./docs/guia-de-personaje.md), [pixel art](./docs/guia-de-arte-pixel.md), [animation](./docs/animacion.md) and [scenes and video](./docs/escenas.md).
 
-La idea nació viendo [Clawd](https://github.com/KebeliSamet0/clawd) de KebeliSamet0, una mascota pixel art de Claude para Windows. Moki Pixel toma esa idea y la lleva a un sistema completo: más animaciones, más vistas, más plataformas y herramientas para crear con él.
+## License and credits
 
-## Licencias
-
-- Código: [MIT](LICENSE).
-- Arte de Moki: [CC BY-NC 4.0](LICENSE-ART.md). Da crédito a «Moki por JorgeSuarez.com.mx» y escríbenos para usos comerciales.
-
-## Estado
-
-Versión 0.1.0. Esta adaptación pixel art es una **propuesta** basada en el diseño de Moki que Jorge aprobó el 12 de octubre de 2026. Detalle en [docs/estado.md](docs/estado.md).
+- Code: [MIT](./LICENSE).
+- Moki's art: [CC BY-NC 4.0](./LICENSE-ART.md). Credit "Moki by JorgeSuarez.com.mx" and write to us for commercial use.
+- The idea came from [Clawd](https://github.com/KebeliSamet0/clawd) by KebeliSamet0, a pixel art Claude pet for Windows.
 
 ---
 
-**EN:** Moki Pixel is an open pixel art animation kit for Moki, Jorge Suárez’s explorer alter ego: 43 animations built on the 12 principles of animation, 4 views, 3 sizes, emotes, engine exports (Phaser, Godot, Unity, GameMaker), programmatic videos, wallpapers, a web pet and a desktop pet for macOS, Windows and Linux that reacts to Claude Code. Code is MIT, Moki’s art is CC BY-NC 4.0. Made with love by JorgeSuarez.com.mx to explore and play with AI and video games.
+<div align="center">
+
+<sub>Made with love ❤️🎮 by <a href="https://jorgesuarez.com.mx">JorgeSuarez.com.mx</a> · <a href="https://github.com/jorgefsb">More projects</a> · <a href="./README.es.md">Leer en español</a><br />Documentation updated on 10 Nov 2026.</sub>
+
+</div>
